@@ -1,0 +1,89 @@
+{
+    "extension": "RDFTransform",
+    "version": "2.2.0",
+    "baseIRI": "http://127.0.0.1:3333/",
+    "namespaces": {
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "vcard": "http://www.w3.org/2006/vcard/ns#"
+    },
+    "subjectMappings": [
+        {
+            "valueSource": {
+                "source": "column",
+                "columnName": "constructorId"
+            },
+            "expression": {
+                "language": "grel",
+                "code": "\"constructor_\" + value"
+            },
+            "typeMappings": [
+                {
+                    "prefix": "",
+                    "valueSource": {
+                        "source": "constant",
+                        "constant": "Constructor"
+                    }
+                }
+            ],
+            "propertyMappings": [
+                {
+                    "prefix": "",
+                    "valueSource": {
+                        "source": "constant",
+                        "constant": "name"
+                    },
+                    "objectMappings": [
+                        {
+                            "valueType": {
+                                "type": "literal"
+                            },
+                            "valueSource": {
+                                "source": "column",
+                                "columnName": "name"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "prefix": "",
+                    "valueSource": {
+                        "source": "constant",
+                        "constant": "nationality"
+                    },
+                    "objectMappings": [
+                        {
+                            "valueType": {
+                                "type": "literal"
+                            },
+                            "valueSource": {
+                                "source": "column",
+                                "columnName": "nationality"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "prefix": "",
+                    "valueSource": {
+                        "source": "constant",
+                        "constant": "wikipedia"
+                    },
+                    "objectMappings": [
+                        {
+                            "valueType": {
+                                "type": "literal"
+                            },
+                            "valueSource": {
+                                "source": "column",
+                                "columnName": "url"
+                            }
+                        }
+                    ]
+                }
+            ]
+        }
+    ]
+}

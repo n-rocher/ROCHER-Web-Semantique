@@ -1,0 +1,758 @@
+@prefix :      <http://127.0.0.1:3333/> .
+@prefix dbo:   <http://dbpedia.org/ontology/> .
+@prefix dbr:   <http://dbpedia.org/resource/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+
+:circuit_59  a      :Circuit ;
+        :alt        "28"^^xsd:int ;
+        :country    dbr:Portugal ;
+        :lat        "41.1705"^^xsd:float ;
+        :lng        "-8.67325"^^xsd:float ;
+        :location   "Oporto" ;
+        :name       "Circuito da Boavista" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Circuito_da_Boavista" .
+
+:circuit_40  a      :Circuit ;
+        :alt        "36"^^xsd:int ;
+        :country    dbr:Belgium ;
+        :lat        "50.9894"^^xsd:float ;
+        :lng        "5.25694"^^xsd:float ;
+        :location   "Heusden-Zolder" ;
+        :name       "Zolder" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Zolder" .
+
+:circuit_12  a      :Circuit ;
+        :alt        "4"^^xsd:int ;
+        :country    dbr:Spain ;
+        :lat        "39.4589"^^xsd:float ;
+        :lng        "-0.331667"^^xsd:float ;
+        :location   "Valencia" ;
+        :name       "Valencia Street Circuit" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Valencia_Street_Circuit" .
+
+dbr:Morocco  a  dbo:Country .
+
+:circuit_53  a      :Circuit ;
+        :alt        "81"^^xsd:int ;
+        :country    dbr:France ;
+        :lat        "49.3306"^^xsd:float ;
+        :lng        "1.00458"^^xsd:float ;
+        :location   "Rouen" ;
+        :name       "Rouen-Les-Essarts" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Rouen-Les-Essarts" .
+
+:circuit_25  a      :Circuit ;
+        :alt        "8"^^xsd:int ;
+        :country    dbr:Argentina ;
+        :lat        "-34.6943"^^xsd:float ;
+        :lng        "-58.4593"^^xsd:float ;
+        :location   "Buenos Aires" ;
+        :name       "Autódromo Juan y Oscar Gálvez" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Aut%C3%B3dromo_Oscar_Alfredo_G%C3%A1lvez" .
+
+:circuit_7  a       :Circuit ;
+        :alt        "13"^^xsd:int ;
+        :country    dbr:Canada ;
+        :lat        "45.5"^^xsd:float ;
+        :lng        "-73.5228"^^xsd:float ;
+        :location   "Montreal" ;
+        :name       "Circuit Gilles Villeneuve" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Circuit_Gilles_Villeneuve" .
+
+:circuit_66  a      :Circuit ;
+        :alt        "551"^^xsd:int ;
+        :country    dbr:Switzerland ;
+        :lat        "46.9589"^^xsd:float ;
+        :lng        "7.40194"^^xsd:float ;
+        :location   "Bern" ;
+        :name       "Circuit Bremgarten" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Circuit_Bremgarten" .
+
+:circuit_38  a      :Circuit ;
+        :alt        "145"^^xsd:int ;
+        :country    dbr:UK ;
+        :lat        "51.3569"^^xsd:float ;
+        :lng        "0.263056"^^xsd:float ;
+        :location   "Kent" ;
+        :name       "Brands Hatch" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Brands_Hatch" .
+
+:circuit_79  a      :Circuit ;
+        :country    dbr:USA ;
+        :lat        "25.9581"^^xsd:float ;
+        :lng        "-80.2389"^^xsd:float ;
+        :location   "Miami" ;
+        :name       "Miami International Autodrome" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Miami_International_Autodrome" .
+
+dbr:Brazil  a   dbo:Country .
+
+dbr:Belgium  a  dbo:Country .
+
+:circuit_1  a       :Circuit ;
+        :alt        "10"^^xsd:int ;
+        :country    dbr:Australia ;
+        :lat        "-37.8497"^^xsd:float ;
+        :lng        "144.968"^^xsd:float ;
+        :location   "Melbourne" ;
+        :name       "Albert Park Grand Prix Circuit" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Melbourne_Grand_Prix_Circuit" .
+
+:circuit_60  a      :Circuit ;
+        :alt        "470"^^xsd:int ;
+        :country    dbr:USA ;
+        :lat        "33.937"^^xsd:float ;
+        :lng        "-117.273"^^xsd:float ;
+        :location   "California" ;
+        :name       "Riverside International Raceway" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Riverside_International_Raceway" .
+
+:circuit_32  a      :Circuit ;
+        :alt        "2227"^^xsd:int ;
+        :country    dbr:Mexico ;
+        :lat        "19.4042"^^xsd:float ;
+        :lng        "-99.0907"^^xsd:float ;
+        :location   "Mexico City" ;
+        :name       "Autódromo Hermanos Rodríguez" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Aut%C3%B3dromo_Hermanos_Rodr%C3%ADguez" .
+
+dbr:Hungary  a  dbo:Country .
+
+:circuit_73  a      :Circuit ;
+        :alt        "-7"^^xsd:int ;
+        :country    dbr:Azerbaijan ;
+        :lat        "40.3725"^^xsd:float ;
+        :lng        "49.8533"^^xsd:float ;
+        :location   "Baku" ;
+        :name       "Baku City Circuit" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Baku_City_Circuit" .
+
+:circuit_45  a      :Circuit ;
+        :alt        "609"^^xsd:int ;
+        :country    dbr:Spain ;
+        :lat        "40.6171"^^xsd:float ;
+        :lng        "-3.58558"^^xsd:float ;
+        :location   "Madrid" ;
+        :name       "Jarama" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Circuito_Permanente_Del_Jarama" .
+
+:circuit_17  a      :Circuit ;
+        :alt        "5"^^xsd:int ;
+        :country    dbr:China ;
+        :lat        "31.3389"^^xsd:float ;
+        :lng        "121.22"^^xsd:float ;
+        :location   "Shanghai" ;
+        :name       "Shanghai International Circuit" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Shanghai_International_Circuit" .
+
+dbr:UAE  a      dbo:Country .
+
+dbr:SaudiArabia  a  dbo:Country .
+
+:circuit_58  a      :Circuit ;
+        :alt        "20"^^xsd:int ;
+        :country    dbr:UK ;
+        :lat        "53.4769"^^xsd:float ;
+        :lng        "-2.94056"^^xsd:float ;
+        :location   "Liverpool" ;
+        :name       "Aintree" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Aintree_Motor_Racing_Circuit" .
+
+dbr:SouthAfrica  a  dbo:Country .
+
+dbr:Argentina  a  dbo:Country .
+
+:circuit_11  a      :Circuit ;
+        :alt        "264"^^xsd:int ;
+        :country    dbr:Hungary ;
+        :lat        "47.5789"^^xsd:float ;
+        :lng        "19.2486"^^xsd:float ;
+        :location   "Budapest" ;
+        :name       "Hungaroring" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Hungaroring" .
+
+:circuit_52  a      :Circuit ;
+        :alt        "214"^^xsd:int ;
+        :country    dbr:Canada ;
+        :lat        "46.1877"^^xsd:float ;
+        :lng        "-74.6099"^^xsd:float ;
+        :location   "Quebec" ;
+        :name       "Circuit Mont-Tremblant" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Circuit_Mont-Tremblant" .
+
+:circuit_24  a      :Circuit ;
+        :alt        "3"^^xsd:int ;
+        :country    dbr:UAE ;
+        :lat        "24.4672"^^xsd:float ;
+        :lng        "54.6031"^^xsd:float ;
+        :location   "Abu Dhabi" ;
+        :name       "Yas Marina Circuit" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Yas_Marina_Circuit" .
+
+:circuit_6  a       :Circuit ;
+        :alt        "7"^^xsd:int ;
+        :country    dbr:Monaco ;
+        :lat        "43.7347"^^xsd:float ;
+        :lng        "7.42056"^^xsd:float ;
+        :location   "Monte-Carlo" ;
+        :name       "Circuit de Monaco" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Circuit_de_Monaco" .
+
+:circuit_65  a      :Circuit ;
+        :alt        "129"^^xsd:int ;
+        :country    dbr:Italy ;
+        :lat        "42.475"^^xsd:float ;
+        :lng        "14.1508"^^xsd:float ;
+        :location   "Pescara" ;
+        :name       "Pescara Circuit" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Pescara_Circuit" .
+
+dbr:Spain  a    dbo:Country .
+
+:circuit_37  a      :Circuit ;
+        :alt        "177"^^xsd:int ;
+        :country    dbr:USA ;
+        :lat        "42.3298"^^xsd:float ;
+        :lng        "-83.0401"^^xsd:float ;
+        :location   "Detroit" ;
+        :name       "Detroit Street Circuit" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Detroit_street_circuit" .
+
+:circuit_78  a      :Circuit ;
+        :country    dbr:Qatar ;
+        :lat        "25.49"^^xsd:float ;
+        :lng        "51.4542"^^xsd:float ;
+        :location   "Al Daayen" ;
+        :name       "Losail International Circuit" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Losail_International_Circuit" .
+
+dbr:Sweden  a   dbo:Country .
+
+dbr:Bahrain  a  dbo:Country .
+
+:circuit_31  a      :Circuit ;
+        :alt        "88"^^xsd:int ;
+        :country    dbr:UK ;
+        :lat        "52.8306"^^xsd:float ;
+        :lng        "-1.37528"^^xsd:float ;
+        :location   "Castle Donington" ;
+        :name       "Donington Park" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Donington_Park" .
+
+dbr:Mexico  a   dbo:Country .
+
+:circuit_44  a      :Circuit ;
+        :alt        "639"^^xsd:int ;
+        :country    dbr:USA ;
+        :lat        "36.1162"^^xsd:float ;
+        :lng        "-115.174"^^xsd:float ;
+        :location   "Nevada" ;
+        :name       "Las Vegas Street Circuit" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Las_Vegas,_Nevada" .
+
+:circuit_16  a      :Circuit ;
+        :alt        "583"^^xsd:int ;
+        :country    dbr:Japan ;
+        :lat        "35.3717"^^xsd:float ;
+        :lng        "138.927"^^xsd:float ;
+        :location   "Oyama" ;
+        :name       "Fuji Speedway" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Fuji_Speedway" .
+
+:circuit_57  a      :Circuit ;
+        :alt        "676"^^xsd:int ;
+        :country    dbr:Austria ;
+        :lat        "47.2039"^^xsd:float ;
+        :lng        "14.7478"^^xsd:float ;
+        :location   "Styria" ;
+        :name       "Zeltweg" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Zeltweg_Airfield" .
+
+:circuit_29  a      :Circuit ;
+        :alt        "58"^^xsd:int ;
+        :country    dbr:Australia ;
+        :lat        "-34.9272"^^xsd:float ;
+        :lng        "138.617"^^xsd:float ;
+        :location   "Adelaide" ;
+        :name       "Adelaide Street Circuit" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Adelaide_Street_Circuit" .
+
+:circuit_10  a      :Circuit ;
+        :alt        "103"^^xsd:int ;
+        :country    dbr:Germany ;
+        :lat        "49.3278"^^xsd:float ;
+        :lng        "8.56583"^^xsd:float ;
+        :location   "Hockenheim" ;
+        :name       "Hockenheimring" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Hockenheimring" .
+
+dbr:Australia  a  dbo:Country .
+
+:circuit_51  a      :Circuit ;
+        :alt        "790"^^xsd:int ;
+        :country    dbr:France ;
+        :lat        "45.7472"^^xsd:float ;
+        :lng        "3.03889"^^xsd:float ;
+        :location   "Clermont-Ferrand" ;
+        :name       "Charade Circuit" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Charade_Circuit" .
+
+:circuit_5  a       :Circuit ;
+        :alt        "130"^^xsd:int ;
+        :country    dbr:Turkey ;
+        :lat        "40.9517"^^xsd:float ;
+        :lng        "29.405"^^xsd:float ;
+        :location   "Istanbul" ;
+        :name       "Istanbul Park" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Istanbul_Park" .
+
+:circuit_64  a      :Circuit ;
+        :alt        "19"^^xsd:int ;
+        :country    dbr:Morocco ;
+        :lat        "33.5786"^^xsd:float ;
+        :lng        "-7.6875"^^xsd:float ;
+        :location   "Casablanca" ;
+        :name       "Ain Diab" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Ain-Diab_Circuit" .
+
+:circuit_36  a      :Circuit ;
+        :alt        "1126"^^xsd:int ;
+        :country    dbr:Brazil ;
+        :lat        "-22.9756"^^xsd:float ;
+        :lng        "-43.395"^^xsd:float ;
+        :location   "Rio de Janeiro" ;
+        :name       "Autódromo Internacional Nelson Piquet" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Aut%C3%B3dromo_Internacional_Nelson_Piquet" .
+
+:circuit_77  a      :Circuit ;
+        :alt        "15"^^xsd:int ;
+        :country    dbr:SaudiArabia ;
+        :lat        "21.6319"^^xsd:float ;
+        :lng        "39.1044"^^xsd:float ;
+        :location   "Jeddah" ;
+        :name       "Jeddah Corniche Circuit" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Jeddah_Street_Circuit" .
+
+:circuit_49  a      :Circuit ;
+        :alt        "79"^^xsd:int ;
+        :country    dbr:Spain ;
+        :lat        "41.3664"^^xsd:float ;
+        :lng        "2.15167"^^xsd:float ;
+        :location   "Barcelona" ;
+        :name       "Montjuïc" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Montju%C3%AFc_circuit" .
+
+dbr:Portugal  a  dbo:Country .
+
+:circuit_30  a      :Circuit ;
+        :alt        "1460"^^xsd:int ;
+        :country    dbr:SouthAfrica ;
+        :lat        "-25.9894"^^xsd:float ;
+        :lng        "28.0767"^^xsd:float ;
+        :location   "Midrand" ;
+        :name       "Kyalami" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Kyalami" .
+
+:circuit_71  a      :Circuit ;
+        :alt        "2"^^xsd:int ;
+        :country    dbr:Russia ;
+        :lat        "43.4057"^^xsd:float ;
+        :lng        "39.9578"^^xsd:float ;
+        :location   "Sochi" ;
+        :name       "Sochi Autodrom" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Sochi_Autodrom" .
+
+:circuit_43  a      :Circuit ;
+        :alt        "12"^^xsd:int ;
+        :country    dbr:USA ;
+        :lat        "33.7651"^^xsd:float ;
+        :lng        "-118.189"^^xsd:float ;
+        :location   "California" ;
+        :name       "Long Beach" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Long_Beach,_California" .
+
+:circuit_15  a      :Circuit ;
+        :alt        "18"^^xsd:int ;
+        :country    dbr:Singapore ;
+        :lat        "1.2914"^^xsd:float ;
+        :lng        "103.864"^^xsd:float ;
+        :location   "Marina Bay" ;
+        :name       "Marina Bay Street Circuit" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Marina_Bay_Street_Circuit" .
+
+:circuit_56  a      :Circuit ;
+        :alt        "15"^^xsd:int ;
+        :country    dbr:SouthAfrica ;
+        :lat        "-33.0486"^^xsd:float ;
+        :lng        "27.8736"^^xsd:float ;
+        :location   "Eastern Cape Province" ;
+        :name       "Prince George Circuit" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Prince_George_Circuit" .
+
+dbr:UK  a       dbo:Country .
+
+:circuit_28  a      :Circuit ;
+        :alt        "266"^^xsd:int ;
+        :country    dbr:Japan ;
+        :lat        "34.915"^^xsd:float ;
+        :lng        "134.221"^^xsd:float ;
+        :location   "Okayama" ;
+        :name       "Okayama International Circuit" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/TI_Circuit" .
+
+:circuit_69  a      :Circuit ;
+        :alt        "161"^^xsd:int ;
+        :country    dbr:USA ;
+        :lat        "30.1328"^^xsd:float ;
+        :lng        "-97.6411"^^xsd:float ;
+        :location   "Austin" ;
+        :name       "Circuit of the Americas" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Circuit_of_the_Americas" .
+
+:circuit_50  a      :Circuit ;
+        :alt        "139"^^xsd:int ;
+        :country    dbr:Belgium ;
+        :lat        "50.6211"^^xsd:float ;
+        :lng        "4.32694"^^xsd:float ;
+        :location   "Brussels" ;
+        :name       "Nivelles-Baulers" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Nivelles-Baulers" .
+
+:circuit_22  a      :Circuit ;
+        :alt        "45"^^xsd:int ;
+        :country    dbr:Japan ;
+        :lat        "34.8431"^^xsd:float ;
+        :lng        "136.541"^^xsd:float ;
+        :location   "Suzuka" ;
+        :name       "Suzuka Circuit" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Suzuka_Circuit" .
+
+:circuit_4  a       :Circuit ;
+        :alt        "109"^^xsd:int ;
+        :country    dbr:Spain ;
+        :lat        "41.57"^^xsd:float ;
+        :lng        "2.26111"^^xsd:float ;
+        :location   "Montmeló" ;
+        :name       "Circuit de Barcelona-Catalunya" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Circuit_de_Barcelona-Catalunya" .
+
+:circuit_63  a      :Circuit ;
+        :alt        "18"^^xsd:int ;
+        :country    dbr:USA ;
+        :lat        "27.4547"^^xsd:float ;
+        :lng        "-81.3483"^^xsd:float ;
+        :location   "Florida" ;
+        :name       "Sebring International Raceway" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Sebring_Raceway" .
+
+:circuit_35  a      :Circuit ;
+        :alt        "0"^^xsd:int ;
+        :country    dbr:Korea ;
+        :lat        "34.7333"^^xsd:float ;
+        :lng        "126.417"^^xsd:float ;
+        :location   "Yeongam County" ;
+        :name       "Korean International Circuit" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Korean_International_Circuit" .
+
+dbr:India  a    dbo:Country .
+
+:circuit_76  a      :Circuit ;
+        :alt        "255"^^xsd:int ;
+        :country    dbr:Italy ;
+        :lat        "43.9975"^^xsd:float ;
+        :lng        "11.3719"^^xsd:float ;
+        :location   "Mugello" ;
+        :name       "Autodromo Internazionale del Mugello" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Mugello_Circuit" .
+
+:circuit_48  a      :Circuit ;
+        :alt        "332"^^xsd:int ;
+        :country    dbr:Canada ;
+        :lat        "44.0481"^^xsd:float ;
+        :lng        "-78.6756"^^xsd:float ;
+        :location   "Ontario" ;
+        :name       "Mosport International Raceway" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Mosport" .
+
+dbr:Switzerland  a  dbo:Country .
+
+:circuit_70  a      :Circuit ;
+        :alt        "678"^^xsd:int ;
+        :country    dbr:Austria ;
+        :lat        "47.2197"^^xsd:float ;
+        :lng        "14.7647"^^xsd:float ;
+        :location   "Spielberg" ;
+        :name       "Red Bull Ring" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Red_Bull_Ring" .
+
+:circuit_42  a      :Circuit ;
+        :alt        "139"^^xsd:int ;
+        :country    dbr:USA ;
+        :lat        "32.7774"^^xsd:float ;
+        :lng        "-96.7587"^^xsd:float ;
+        :location   "Dallas" ;
+        :name       "Fair Park" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Fair_Park" .
+
+:circuit_14  a      :Circuit ;
+        :alt        "162"^^xsd:int ;
+        :country    dbr:Italy ;
+        :lat        "45.6156"^^xsd:float ;
+        :lng        "9.28111"^^xsd:float ;
+        :location   "Monza" ;
+        :name       "Autodromo Nazionale di Monza" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Autodromo_Nazionale_Monza" .
+
+dbr:Malaysia  a  dbo:Country .
+
+:circuit_55  a      :Circuit ;
+        :alt        "88"^^xsd:int ;
+        :country    dbr:France ;
+        :lat        "49.2542"^^xsd:float ;
+        :lng        "3.93083"^^xsd:float ;
+        :location   "Reims" ;
+        :name       "Reims-Gueux" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Reims-Gueux" .
+
+:circuit_27  a      :Circuit ;
+        :alt        "130"^^xsd:int ;
+        :country    dbr:Portugal ;
+        :lat        "38.7506"^^xsd:float ;
+        :lng        "-9.39417"^^xsd:float ;
+        :location   "Estoril" ;
+        :name       "Autódromo do Estoril" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Aut%C3%B3dromo_do_Estoril" .
+
+:circuit_9  a       :Circuit ;
+        :alt        "153"^^xsd:int ;
+        :country    dbr:UK ;
+        :lat        "52.0786"^^xsd:float ;
+        :lng        "-1.01694"^^xsd:float ;
+        :location   "Silverstone" ;
+        :name       "Silverstone Circuit" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Silverstone_Circuit" .
+
+dbr:USA  a      dbo:Country .
+
+dbr:Singapore  a  dbo:Country .
+
+:circuit_68  a      :Circuit ;
+        :alt        "194"^^xsd:int ;
+        :country    dbr:India ;
+        :lat        "28.3487"^^xsd:float ;
+        :lng        "77.5331"^^xsd:float ;
+        :location   "Uttar Pradesh" ;
+        :name       "Buddh International Circuit" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Buddh_International_Circuit" .
+
+dbr:Italy  a    dbo:Country .
+
+dbr:Germany  a  dbo:Country .
+
+dbr:Monaco  a   dbo:Country .
+
+:circuit_21  a      :Circuit ;
+        :alt        "37"^^xsd:int ;
+        :country    dbr:Italy ;
+        :lat        "44.3439"^^xsd:float ;
+        :lng        "11.7167"^^xsd:float ;
+        :location   "Imola" ;
+        :name       "Autodromo Enzo e Dino Ferrari" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Autodromo_Enzo_e_Dino_Ferrari" .
+
+dbr:Netherlands  a  dbo:Country .
+
+:circuit_3  a       :Circuit ;
+        :alt        "7"^^xsd:int ;
+        :country    dbr:Bahrain ;
+        :lat        "26.0325"^^xsd:float ;
+        :lng        "50.5106"^^xsd:float ;
+        :location   "Sakhir" ;
+        :name       "Bahrain International Circuit" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Bahrain_International_Circuit" .
+
+:circuit_62  a      :Circuit ;
+        :alt        "158"^^xsd:int ;
+        :country    dbr:Portugal ;
+        :lat        "38.7197"^^xsd:float ;
+        :lng        "-9.20306"^^xsd:float ;
+        :location   "Lisbon" ;
+        :name       "Monsanto Park Circuit" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Monsanto_Park_Circuit" .
+
+dbr:Japan  a    dbo:Country .
+
+:circuit_34  a      :Circuit ;
+        :alt        "432"^^xsd:int ;
+        :country    dbr:France ;
+        :lat        "43.2506"^^xsd:float ;
+        :lng        "5.79167"^^xsd:float ;
+        :location   "Le Castellet" ;
+        :name       "Circuit Paul Ricard" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Paul_Ricard_Circuit" .
+
+dbr:France  a   dbo:Country .
+
+:circuit_75  a      :Circuit ;
+        :alt        "108"^^xsd:int ;
+        :country    dbr:Portugal ;
+        :lat        "37.227"^^xsd:float ;
+        :lng        "-8.6267"^^xsd:float ;
+        :location   "Portimão" ;
+        :name       "Autódromo Internacional do Algarve" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Algarve_International_Circuit" .
+
+dbr:Azerbaijan  a  dbo:Country .
+
+:circuit_47  a      :Circuit ;
+        :alt        "153"^^xsd:int ;
+        :country    dbr:Sweden ;
+        :lat        "57.2653"^^xsd:float ;
+        :lng        "13.6042"^^xsd:float ;
+        :location   "Anderstorp" ;
+        :name       "Scandinavian Raceway" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Scandinavian_Raceway" .
+
+:circuit_19  a      :Circuit ;
+        :alt        "223"^^xsd:int ;
+        :country    dbr:USA ;
+        :lat        "39.795"^^xsd:float ;
+        :lng        "-86.2347"^^xsd:float ;
+        :location   "Indianapolis" ;
+        :name       "Indianapolis Motor Speedway" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Indianapolis_Motor_Speedway" .
+
+dbr:Russia  a   dbo:Country .
+
+:circuit_13  a      :Circuit ;
+        :alt        "401"^^xsd:int ;
+        :country    dbr:Belgium ;
+        :lat        "50.4372"^^xsd:float ;
+        :lng        "5.97139"^^xsd:float ;
+        :location   "Spa" ;
+        :name       "Circuit de Spa-Francorchamps" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Circuit_de_Spa-Francorchamps" .
+
+dbr:China  a    dbo:Country .
+
+:circuit_41  a      :Circuit ;
+        :alt        "484"^^xsd:int ;
+        :country    dbr:France ;
+        :lat        "47.3625"^^xsd:float ;
+        :lng        "4.89913"^^xsd:float ;
+        :location   "Dijon" ;
+        :name       "Dijon-Prenois" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Dijon-Prenois" .
+
+dbr:Canada  a   dbo:Country .
+
+dbr:Austria  a  dbo:Country .
+
+:circuit_54  a      :Circuit ;
+        :alt        "67"^^xsd:int ;
+        :country    dbr:France ;
+        :lat        "47.95"^^xsd:float ;
+        :lng        "0.224231"^^xsd:float ;
+        :location   "Le Mans" ;
+        :name       "Le Mans" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Circuit_de_la_Sarthe#Bugatti_Circuit" .
+
+:circuit_26  a      :Circuit ;
+        :alt        "37"^^xsd:int ;
+        :country    dbr:Spain ;
+        :lat        "36.7083"^^xsd:float ;
+        :lng        "-6.03417"^^xsd:float ;
+        :location   "Jerez de la Frontera" ;
+        :name       "Circuito de Jerez" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Circuito_Permanente_de_Jerez" .
+
+:circuit_8  a       :Circuit ;
+        :alt        "228"^^xsd:int ;
+        :country    dbr:France ;
+        :lat        "46.8642"^^xsd:float ;
+        :lng        "3.16361"^^xsd:float ;
+        :location   "Magny Cours" ;
+        :name       "Circuit de Nevers Magny-Cours" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Circuit_de_Nevers_Magny-Cours" .
+
+:circuit_67  a      :Circuit ;
+        :alt        "85"^^xsd:int ;
+        :country    dbr:Spain ;
+        :lat        "41.3903"^^xsd:float ;
+        :lng        "2.11667"^^xsd:float ;
+        :location   "Barcelona" ;
+        :name       "Circuit de Pedralbes" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Pedralbes_Circuit" .
+
+:circuit_39  a      :Circuit ;
+        :alt        "6"^^xsd:int ;
+        :country    dbr:Netherlands ;
+        :lat        "52.3888"^^xsd:float ;
+        :lng        "4.54092"^^xsd:float ;
+        :location   "Zandvoort" ;
+        :name       "Circuit Park Zandvoort" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Circuit_Zandvoort" .
+
+:circuit_20  a      :Circuit ;
+        :alt        "578"^^xsd:int ;
+        :country    dbr:Germany ;
+        :lat        "50.3356"^^xsd:float ;
+        :lng        "6.9475"^^xsd:float ;
+        :location   "Nürburg" ;
+        :name       "Nürburgring" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/N%C3%BCrburgring" .
+
+:circuit_2  a       :Circuit ;
+        :alt        "18"^^xsd:int ;
+        :country    dbr:Malaysia ;
+        :lat        "2.76083"^^xsd:float ;
+        :lng        "101.738"^^xsd:float ;
+        :location   "Kuala Lumpur" ;
+        :name       "Sepang International Circuit" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Sepang_International_Circuit" .
+
+:circuit_61  a      :Circuit ;
+        :alt        "53"^^xsd:int ;
+        :country    dbr:Germany ;
+        :lat        "52.4806"^^xsd:float ;
+        :lng        "13.2514"^^xsd:float ;
+        :location   "Berlin" ;
+        :name       "AVUS" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/AVUS" .
+
+dbr:Turkey  a   dbo:Country .
+
+:circuit_33  a      :Circuit ;
+        :alt        "345"^^xsd:int ;
+        :country    dbr:USA ;
+        :lat        "33.4479"^^xsd:float ;
+        :lng        "-112.075"^^xsd:float ;
+        :location   "Phoenix" ;
+        :name       "Phoenix street circuit" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Phoenix_street_circuit" .
+
+dbr:Korea  a    dbo:Country .
+
+:circuit_46  a      :Circuit ;
+        :alt        "485"^^xsd:int ;
+        :country    dbr:USA ;
+        :lat        "42.3369"^^xsd:float ;
+        :lng        "-76.9272"^^xsd:float ;
+        :location   "New York State" ;
+        :name       "Watkins Glen" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Watkins_Glen_International" .
+
+:circuit_18  a      :Circuit ;
+        :alt        "785"^^xsd:int ;
+        :country    dbr:Brazil ;
+        :lat        "-23.7036"^^xsd:float ;
+        :lng        "-46.6997"^^xsd:float ;
+        :location   "São Paulo" ;
+        :name       "Autódromo José Carlos Pace" ;
+        :wikipedia  "http://en.wikipedia.org/wiki/Aut%C3%B3dromo_Jos%C3%A9_Carlos_Pace" .
+
+dbr:Qatar  a    dbo:Country .

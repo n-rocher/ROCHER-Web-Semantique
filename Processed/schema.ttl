@@ -1,0 +1,198 @@
+:Result a rdf:Class .
+
+:race a rdf:Property .
+:race rdfs:domain :Result .
+:race rdfs:range dbo:GrandPrix .
+
+:driver a rdf:Property .
+:driver rdfs:domain :Result .
+:driver rdfs:range :Driver .
+
+:constructor a rdf:Property .
+:constructor rdfs:domain :Result .
+:constructor rdfs:range :Constructor .
+
+:driverNumber a rdf:Property .
+:driverNumber rdfs:domain :Result .
+:driverNumber rdfs:range xsd:int .
+
+:grid a rdf:Property .
+:grid rdfs:domain :Result .
+:grid rdfs:range xsd:int .
+
+:positionText a rdf:Property .
+:positionText rdfs:domain :Result .
+:positionText rdfs:range xsd:string .
+
+:positionOrder a rdf:Property .
+:positionOrder rdfs:domain :Result .
+:positionOrder rdfs:range xsd:int .
+
+:points a rdf:Property .
+:points rdfs:domain :Result .
+:points rdfs:range xsd:float .
+
+:laps a rdf:Property .
+:laps rdfs:domain :Result .
+:laps rdfs:range xsd:int .
+
+:time a rdf:Property .
+:time rdfs:domain :Result .
+:time rdfs:range xsd:string .
+
+:milliseconds a rdf:Property .
+:milliseconds rdfs:domain :Result .
+:milliseconds rdfs:range xsd:string .
+
+:fastestLap a rdf:Property .
+:fastestLap rdfs:domain :Result .
+:fastestLap rdfs:range xsd:int .
+
+:rank a rdf:Property .
+:rank rdfs:domain :Result .
+:rank rdfs:range xsd:int .
+
+:fastestLapTime a rdf:Property .
+:fastestLapTime rdfs:domain :Result .
+:fastestLapTime rdfs:range xsd:string .
+
+:fastestLapSpeed a rdf:Property .
+:fastestLapSpeed rdfs:domain :Result .
+:fastestLapSpeed rdfs:range xsd:float .
+
+:status a rdf:Property .
+:status rdfs:domain :Result .
+:status rdfs:range :Status .
+
+
+:Circuit a rdf:Class .
+
+:name a rdf:Property .
+:name rdfs:domain :Circuit .
+:name rdfs:range xsd:string .
+
+:location a rdf:Property .
+:location rdfs:domain :Circuit .
+:location rdfs:range xsd:string .
+
+:country a rdf:Property .
+:country rdfs:domain :Circuit .
+:country rdfs:range dbo:Country .
+
+:lat a rdf:Property .
+:lat rdfs:domain :Circuit .
+:lat rdfs:range xsd:float .
+
+:lng a rdf:Property .
+:lng rdfs:domain :Circuit .
+:lng rdfs:range xsd:float .
+
+:alt a rdf:Property .
+:alt rdfs:domain :Circuit .
+:alt rdfs:range xsd:int .
+
+:wikipedia a rdf:Property .
+:wikipedia rdfs:domain :Circuit .
+:wikipedia rdfs:range xsd:string .
+
+
+
+
+
+:Constructor a rdf:Class .
+
+:name a rdf:Property .
+:name rdfs:domain :Constructor .
+:name rdfs:range xsd:string .
+
+:nationality a rdf:Property .
+:nationality rdfs:domain :Constructor .
+:nationality rdfs:range xsd:string .
+
+:wikipedia a rdf:Property .
+:wikipedia rdfs:domain :Constructor .
+:wikipedia rdfs:range xsd:string .
+
+
+
+
+
+:Status a rdf:Class .
+
+:status a rdf:Property .
+:status rdfs:domain :Status .
+:status rdfs:range xsd:string .
+
+
+
+
+
+
+:Driver a rdf:Class .
+
+:code a rdf:Property .
+:code rdfs:domain :Driver .
+:code rdfs:range xsd:string .
+
+:dateOfBirth a rdf:Property .
+:dateOfBirth rdfs:domain :Driver .
+:dateOfBirth rdfs:range xsd:date .
+
+:nationality a rdf:Property .
+:nationality rdfs:domain :Driver .
+:nationality rdfs:range xsd:string .
+
+:wikipedia a rdf:Property .
+:wikipedia rdfs:domain :Driver .
+:wikipedia rdfs:range xsd:string .
+
+:DriverName a rdf:Class .
+
+:forename a rdf:Property .
+:forename rdfs:domain :DriverName .
+:forename rdfs:range xsd:string .
+
+:surname a rdf:Property .
+:surname rdfs:domain :DriverName .
+:surname rdfs:range xsd:string .
+
+:name a rdf:Property .
+:name rdfs:domain :Driver .
+:name rdfs:range xsd:string .
+
+dbo:GrandPrix a rdf:Class .
+
+:year a rdf:Property .
+:year rdfs:domain dbo:GrandPrix .
+:year rdfs:range xsd:int .
+
+:round a rdf:Property .
+:round rdfs:domain dbo:GrandPrix .
+:round rdfs:range xsd:int .
+
+:circuit a rdf:Property .
+:circuit rdfs:domain dbo:GrandPrix .
+:circuit rdfs:range :Circuit .
+
+:name a rdf:Property .
+:name rdfs:domain dbo:GrandPrix .
+:name rdfs:range xsd:string .
+
+:wikipedia a rdf:Property .
+:wikipedia rdfs:domain dbo:GrandPrix .
+:wikipedia rdfs:range xsd:string .
+
+:DateTime a rdf:Class .
+
+:date a rdf:Property .
+:date rdfs:domain :DateTime .
+
+:sprint a rdf:Property .
+:sprint rdfs:domain dbo:GrandPrix .
+:sprint rdfs:range xsd:string .
+
+:DateTime a rdf:Class .
+
+:dateTime a rdf:Property .
+:dateTime rdfs:domain dbo:GrandPrix .
+:dateTime rdfs:range xsd:string .

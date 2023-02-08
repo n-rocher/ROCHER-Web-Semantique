@@ -1,0 +1,5 @@
+.vscode/
+apache-jena-fuseki-4.7.0/
+openrefine-3.6.2/
+node_modules/
+front-end/package-lock.json

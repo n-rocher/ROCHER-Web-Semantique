@@ -1,0 +1,416 @@
+:status_49  a    :Status ;
+        :status  "Track rod" .
+
+:status_1  a     :Status ;
+        :status  "Finished" .
+
+:status_108  a   :Status ;
+        :status  "Oil pipe" .
+
+:status_30  a    :Status ;
+        :status  "Driveshaft" .
+
+:status_71  a    :Status ;
+        :status  "Fuel rig" .
+
+:status_130  a   :Status ;
+        :status  "Collision damage" .
+
+:status_43  a    :Status ;
+        :status  "Exhaust" .
+
+:status_102  a   :Status ;
+        :status  "CV joint" .
+
+:status_15  a    :Status ;
+        :status  "+5 Laps" .
+
+:status_84  a    :Status ;
+        :status  "Battery" .
+
+:status_56  a    :Status ;
+        :status  "Engine fire" .
+
+:status_115  a   :Status ;
+        :status  "+22 Laps" .
+
+:status_28  a    :Status ;
+        :status  "Driver Seat" .
+
+:status_97  a    :Status ;
+        :status  "Did not prequalify" .
+
+:status_69  a    :Status ;
+        :status  "Fuel system" .
+
+:status_128  a   :Status ;
+        :status  "+42 Laps" .
+
+:status_6  a     :Status ;
+        :status  "Gearbox" .
+
+:status_50  a    :Status ;
+        :status  "+17 Laps" .
+
+:status_22  a    :Status ;
+        :status  "Suspension" .
+
+:status_91  a    :Status ;
+        :status  "Alternator" .
+
+:status_63  a    :Status ;
+        :status  "Pneumatics" .
+
+:status_122  a   :Status ;
+        :status  "+44 Laps" .
+
+:status_35  a    :Status ;
+        :status  "Refuelling" .
+
+:status_76  a    :Status ;
+        :status  "Vibrations" .
+
+:status_135  a   :Status ;
+        :status  "Brake duct" .
+
+:status_48  a    :Status ;
+        :status  "Fuel pump" .
+
+:status_107  a   :Status ;
+        :status  "Eye injury" .
+
+:status_89  a    :Status ;
+        :status  "Safety concerns" .
+
+:status_70  a    :Status ;
+        :status  "Oil line" .
+
+:status_42  a    :Status ;
+        :status  "Heat shield fire" .
+
+:status_101  a   :Status ;
+        :status  "Turbo" .
+
+:status_14  a    :Status ;
+        :status  "+4 Laps" .
+
+:status_83  a    :Status ;
+        :status  "Chassis" .
+
+:status_55  a    :Status ;
+        :status  "+12 Laps" .
+
+:status_114  a   :Status ;
+        :status  "+18 Laps" .
+
+:status_27  a    :Status ;
+        :status  "Tyre" .
+
+:status_96  a    :Status ;
+        :status  "Excluded" .
+
+:status_68  a    :Status ;
+        :status  "Physical" .
+
+:status_127  a   :Status ;
+        :status  "+20 Laps" .
+
+:status_5  a     :Status ;
+        :status  "Engine" .
+
+:status_21  a    :Status ;
+        :status  "Radiator" .
+
+:status_90  a    :Status ;
+        :status  "Not restarted" .
+
+:status_62  a    :Status ;
+        :status  "Not classified" .
+
+:status_121  a   :Status ;
+        :status  "Magneto" .
+
+:status_34  a    :Status ;
+        :status  "Water pressure" .
+
+:status_75  a    :Status ;
+        :status  "Power loss" .
+
+:status_134  a   :Status ;
+        :status  "+38 Laps" .
+
+:status_47  a    :Status ;
+        :status  "Water leak" .
+
+:status_106  a   :Status ;
+        :status  "Fuel pipe" .
+
+:status_19  a    :Status ;
+        :status  "+9 Laps" .
+
+:status_88  a    :Status ;
+        :status  "+10 Laps" .
+
+:status_119  a   :Status ;
+        :status  "+23 Laps" .
+
+:status_41  a    :Status ;
+        :status  "Broken wing" .
+
+:status_100  a   :Status ;
+        :status  "Driver unwell" .
+
+:status_13  a    :Status ;
+        :status  "+3 Laps" .
+
+:status_82  a    :Status ;
+        :status  "Injury" .
+
+:status_141  a   :Status ;
+        :status  "Cooling system" .
+
+:status_54  a    :Status ;
+        :status  "Withdrew" .
+
+:status_113  a   :Status ;
+        :status  "+25 Laps" .
+
+:status_26  a    :Status ;
+        :status  "Mechanical" .
+
+:status_95  a    :Status ;
+        :status  "Fuel leak" .
+
+:status_67  a    :Status ;
+        :status  "Wheel bearing" .
+
+:status_126  a   :Status ;
+        :status  "Supercharger" .
+
+:status_39  a    :Status ;
+        :status  "Technical" .
+
+:status_139  a   :Status ;
+        :status  "Illness" .
+
+:status_4  a     :Status ;
+        :status  "Collision" .
+
+:status_20  a    :Status ;
+        :status  "Spun off" .
+
+:status_61  a    :Status ;
+        :status  "Wheel nut" .
+
+:status_120  a   :Status ;
+        :status  "+21 Laps" .
+
+:status_33  a    :Status ;
+        :status  "Front wing" .
+
+:status_74  a    :Status ;
+        :status  "Fuel" .
+
+:status_133  a   :Status ;
+        :status  "+49 Laps" .
+
+:status_46  a    :Status ;
+        :status  "Wheel rim" .
+
+:status_105  a   :Status ;
+        :status  "Spark plugs" .
+
+:status_18  a    :Status ;
+        :status  "+8 Laps" .
+
+:status_87  a    :Status ;
+        :status  "Crankshaft" .
+
+:status_59  a    :Status ;
+        :status  "Tyre puncture" .
+
+:status_118  a   :Status ;
+        :status  "+29 Laps" .
+
+:status_40  a    :Status ;
+        :status  "Electronics" .
+
+:status_12  a    :Status ;
+        :status  "+2 Laps" .
+
+:status_9  a     :Status ;
+        :status  "Hydraulics" .
+
+:status_81  a    :Status ;
+        :status  "Did not qualify" .
+
+:status_140  a   :Status ;
+        :status  "Undertray" .
+
+:status_53  a    :Status ;
+        :status  "+13 Laps" .
+
+:status_112  a   :Status ;
+        :status  "+15 Laps" .
+
+:status_25  a    :Status ;
+        :status  "Overheating" .
+
+:status_94  a    :Status ;
+        :status  "Oil pump" .
+
+:status_66  a    :Status ;
+        :status  "Fire" .
+
+:status_125  a   :Status ;
+        :status  "+46 Laps" .
+
+:status_38  a    :Status ;
+        :status  "Steering" .
+
+:status_79  a    :Status ;
+        :status  "Drivetrain" .
+
+:status_138  a   :Status ;
+        :status  "Debris" .
+
+:status_3  a     :Status ;
+        :status  "Accident" .
+
+:status_60  a    :Status ;
+        :status  "Out of fuel" .
+
+:status_32  a    :Status ;
+        :status  "Fuel pressure" .
+
+:status_73  a    :Status ;
+        :status  "Injured" .
+
+:status_132  a   :Status ;
+        :status  "ERS" .
+
+:status_45  a    :Status ;
+        :status  "+11 Laps" .
+
+:status_104  a   :Status ;
+        :status  "Fatal accident" .
+
+:status_17  a    :Status ;
+        :status  "+7 Laps" .
+
+:status_86  a    :Status ;
+        :status  "Halfshaft" .
+
+:status_58  a    :Status ;
+        :status  "+26 Laps" .
+
+:status_117  a   :Status ;
+        :status  "+24 Laps" .
+
+:status_99  a    :Status ;
+        :status  "Distributor" .
+
+:status_11  a    :Status ;
+        :status  "+1 Lap" .
+
+:status_8  a     :Status ;
+        :status  "Clutch" .
+
+:status_80  a    :Status ;
+        :status  "Ignition" .
+
+:status_111  a   :Status ;
+        :status  "+14 Laps" .
+
+:status_24  a    :Status ;
+        :status  "Differential" .
+
+:status_93  a    :Status ;
+        :status  "Safety belt" .
+
+:status_65  a    :Status ;
+        :status  "Rear wing" .
+
+:status_124  a   :Status ;
+        :status  "+19 Laps" .
+
+:status_37  a    :Status ;
+        :status  "Throttle" .
+
+:status_78  a    :Status ;
+        :status  "Safety" .
+
+:status_137  a   :Status ;
+        :status  "Damage" .
+
+:status_2  a     :Status ;
+        :status  "Disqualified" .
+
+:status_109  a   :Status ;
+        :status  "Axle" .
+
+:status_31  a    :Status ;
+        :status  "Retired" .
+
+:status_72  a    :Status ;
+        :status  "Launch control" .
+
+:status_131  a   :Status ;
+        :status  "Power Unit" .
+
+:status_44  a    :Status ;
+        :status  "Oil leak" .
+
+:status_103  a   :Status ;
+        :status  "Water pump" .
+
+:status_16  a    :Status ;
+        :status  "+6 Laps" .
+
+:status_85  a    :Status ;
+        :status  "Stalled" .
+
+:status_116  a   :Status ;
+        :status  "+16 Laps" .
+
+:status_29  a    :Status ;
+        :status  "Puncture" .
+
+:status_98  a    :Status ;
+        :status  "Injection" .
+
+:status_129  a   :Status ;
+        :status  "Engine misfire" .
+
+:status_10  a    :Status ;
+        :status  "Electrical" .
+
+:status_7  a     :Status ;
+        :status  "Transmission" .
+
+:status_51  a    :Status ;
+        :status  "Oil pressure" .
+
+:status_110  a   :Status ;
+        :status  "Water pipe" .
+
+:status_23  a    :Status ;
+        :status  "Brakes" .
+
+:status_92  a    :Status ;
+        :status  "Underweight" .
+
+:status_64  a    :Status ;
+        :status  "Handling" .
+
+:status_123  a   :Status ;
+        :status  "+30 Laps" .
+
+:status_36  a    :Status ;
+        :status  "Wheel" .
+
+:status_77  a    :Status ;
+        :status  "107% Rule" .
+
+:status_136  a   :Status ;
+        :status  "Seat" .

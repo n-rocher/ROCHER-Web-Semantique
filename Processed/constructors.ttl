@@ -1,0 +1,1054 @@
+:constructor_186  a   :Constructor ;
+        :name         "Cooper-Ford" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Cooper_Car_Company> .
+
+:constructor_86  a    :Constructor ;
+        :name         "De Tomaso" ;
+        :nationality  "Italian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/De_Tomaso> .
+
+:constructor_144  a   :Constructor ;
+        :name         "Veritas" ;
+        :nationality  "German" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Veritas_(constructor)> .
+
+:constructor_65  a    :Constructor ;
+        :name         "Martini" ;
+        :nationality  "French" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Martini_(cars)> .
+
+:constructor_123  a   :Constructor ;
+        :name         "Fry" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Fry_(racing_team)> .
+
+:constructor_44  a    :Constructor ;
+        :name         "Euro Brun" ;
+        :nationality  "Italian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Euro_Brun> .
+
+:constructor_102  a   :Constructor ;
+        :name         "Ferguson" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Ferguson_Research_Ltd.> .
+
+:constructor_23  a    :Constructor ;
+        :name         "Brawn" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Brawn_GP> .
+
+:constructor_202  a   :Constructor ;
+        :name         "Shadow-Ford" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Shadow_Racing_Cars> .
+
+:constructor_194  a   :Constructor ;
+        :name         "McLaren-BRM" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/McLaren_(racing)> .
+
+:constructor_173  a   :Constructor ;
+        :name         "Lotus-Maserati" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Team_Lotus> .
+
+:constructor_94  a    :Constructor ;
+        :name         "BRP" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/British_Racing_Partnership> .
+
+:constructor_152  a   :Constructor ;
+        :name         "Aston Butterworth" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Aston_Butterworth> .
+
+:constructor_73  a    :Constructor ;
+        :name         "Parnelli" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Parnelli> .
+
+:constructor_131  a   :Constructor ;
+        :name         "Mercedes" ;
+        :nationality  "German" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Mercedes-Benz_in_Formula_One> .
+
+:constructor_52  a    :Constructor ;
+        :name         "Spirit" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Spirit_(racing_team)> .
+
+:constructor_110  a   :Constructor ;
+        :name         "Lesovsky" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Lesovsky> .
+
+:constructor_31  a    :Constructor ;
+        :name         "Simtek" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Simtek> .
+
+:constructor_10  a    :Constructor ;
+        :name         "Force India" ;
+        :nationality  "Indian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Racing_Point_Force_India> .
+
+:constructor_210  a   :Constructor ;
+        :name         "Haas F1 Team" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Haas_F1_Team> .
+
+:constructor_181  a   :Constructor ;
+        :name         "Brabham-BRM" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Brabham> .
+
+:constructor_160  a   :Constructor ;
+        :name         "Wetteroth" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Wetteroth> .
+
+:constructor_81  a    :Constructor ;
+        :name         "Tecno" ;
+        :nationality  "Italian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Tecno> .
+
+:constructor_60  a    :Constructor ;
+        :name         "Merzario" ;
+        :nationality  "Italian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Merzario> .
+
+:constructor_139  a   :Constructor ;
+        :name         "Bromme" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Bromme> .
+
+:constructor_7  a     :Constructor ;
+        :name         "Toyota" ;
+        :nationality  "Japanese" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Toyota_Racing> .
+
+:constructor_118  a   :Constructor ;
+        :name         "Vanwall" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Vanwall> .
+
+:constructor_39  a    :Constructor ;
+        :name         "AGS" ;
+        :nationality  "French" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Automobiles_Gonfaronnaises_Sportives> .
+
+:constructor_18  a    :Constructor ;
+        :name         "Minardi" ;
+        :nationality  "Italian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Minardi> .
+
+:constructor_189  a   :Constructor ;
+        :name         "Eagle-Climax" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Anglo_American_Racers> .
+
+:constructor_168  a   :Constructor ;
+        :name         "Cooper-OSCA" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Cooper_Car_Company> .
+
+:constructor_89  a    :Constructor ;
+        :name         "LDS" ;
+        :nationality  "South African" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/LDS_(automobile)> .
+
+:constructor_147  a   :Constructor ;
+        :name         "AFM" ;
+        :nationality  "German" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Alex_von_Falkenhausen_Motorenbau> .
+
+:constructor_68  a    :Constructor ;
+        :name         "LEC" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/LEC_(Formula_One)> .
+
+:constructor_126  a   :Constructor ;
+        :name         "Alta" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Alta_auto_racing_team> .
+
+:constructor_47  a    :Constructor ;
+        :name         "Life" ;
+        :nationality  "Italian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Life_(Racing_Team)> .
+
+:constructor_105  a   :Constructor ;
+        :name         "Maserati" ;
+        :nationality  "Italian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Maserati> .
+
+:constructor_26  a    :Constructor ;
+        :name         "Lola" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/MasterCard_Lola> .
+
+:constructor_205  a   :Constructor ;
+        :name         "Lotus" ;
+        :nationality  "Malaysian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Lotus_Racing> .
+
+:constructor_197  a   :Constructor ;
+        :name         "BRM-Ford" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/BRM> .
+
+:constructor_176  a   :Constructor ;
+        :name         "Lotus-BRM" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Team_Lotus> .
+
+:constructor_97  a    :Constructor ;
+        :name         "Gilby" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Gilby> .
+
+:constructor_155  a   :Constructor ;
+        :name         "Hall" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Hall_(constructor)> .
+
+:constructor_76  a    :Constructor ;
+        :name         "Lyncar" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Lyncar> .
+
+:constructor_134  a   :Constructor ;
+        :name         "Schroeder" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Schroeder_(constructor)> .
+
+:constructor_2  a     :Constructor ;
+        :name         "BMW Sauber" ;
+        :nationality  "German" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/BMW_Sauber> .
+
+:constructor_55  a    :Constructor ;
+        :name         "Theodore" ;
+        :nationality  "Hong Kong" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Theodore_Racing> .
+
+:constructor_113  a   :Constructor ;
+        :name         "Kurtis Kraft" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Kurtis_Kraft> .
+
+:constructor_34  a    :Constructor ;
+        :name         "Brabham" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Brabham> .
+
+:constructor_13  a    :Constructor ;
+        :name         "MF1" ;
+        :nationality  "Russian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Midland_F1_Racing> .
+
+:constructor_213  a   :Constructor ;
+        :name         "AlphaTauri" ;
+        :nationality  "Italian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Scuderia_AlphaTauri> .
+
+:constructor_184  a   :Constructor ;
+        :name         "LDS-Climax" ;
+        :nationality  "South African" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/LDS_(automobile)> .
+
+:constructor_163  a   :Constructor ;
+        :name         "Milano" ;
+        :nationality  "Italian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Scuderia_Milano> .
+
+:constructor_84  a    :Constructor ;
+        :name         "Connew" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Connew> .
+
+:constructor_142  a   :Constructor ;
+        :name         "Turner" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Turner_(constructor)> .
+
+:constructor_63  a    :Constructor ;
+        :name         "Surtees" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Surtees> .
+
+:constructor_121  a   :Constructor ;
+        :name         "Elder" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Elder_(constructor)> .
+
+:constructor_42  a    :Constructor ;
+        :name         "Coloni" ;
+        :nationality  "Italian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Enzo_Coloni_Racing_Car_Systems> .
+
+:constructor_100  a   :Constructor ;
+        :name         "ENB" ;
+        :nationality  "Belgian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Ecurie_Nationale_Belge> .
+
+:constructor_21  a    :Constructor ;
+        :name         "Arrows" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Arrows_Grand_Prix_International> .
+
+:constructor_200  a   :Constructor ;
+        :name         "March-Ford" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/March_Engineering> .
+
+:constructor_192  a   :Constructor ;
+        :name         "Cooper-Ferrari" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Cooper_Car_Company> .
+
+:constructor_171  a   :Constructor ;
+        :name         "Cooper-Castellotti" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Cooper_Car_Company> .
+
+:constructor_92  a    :Constructor ;
+        :name         "Scirocco" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Scirocco-Powell> .
+
+:constructor_150  a   :Constructor ;
+        :name         "Deidt" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Deidt> .
+
+:constructor_71  a    :Constructor ;
+        :name         "Apollon" ;
+        :nationality  "Swiss" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Apollon_(Formula_One)> .
+
+:constructor_50  a    :Constructor ;
+        :name         "RAM" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/RAM_Racing> .
+
+:constructor_129  a   :Constructor ;
+        :name         "Stevens" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Stevens_(constructor)> .
+
+:constructor_108  a   :Constructor ;
+        :name         "Epperly" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Epperly> .
+
+:constructor_29  a    :Constructor ;
+        :name         "Footwork" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Footwork_Arrows> .
+
+:constructor_208  a   :Constructor ;
+        :name         "Lotus F1" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Lotus_F1> .
+
+:constructor_179  a   :Constructor ;
+        :name         "De Tomaso-Ferrari" ;
+        :nationality  "Italian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/De_Tomaso> .
+
+:constructor_158  a   :Constructor ;
+        :name         "Rae" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Rae_(motorsport)> .
+
+:constructor_79  a    :Constructor ;
+        :name         "Token" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Token_(Racing_team)> .
+
+:constructor_137  a   :Constructor ;
+        :name         "Arzani-Volpini" ;
+        :nationality  "Italian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Arzani-Volpini> .
+
+:constructor_5  a     :Constructor ;
+        :name         "Toro Rosso" ;
+        :nationality  "Italian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Scuderia_Toro_Rosso> .
+
+:constructor_58  a    :Constructor ;
+        :name         "Shadow" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Shadow_Racing_Cars> .
+
+:constructor_116  a   :Constructor ;
+        :name         "Ewing" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Ewing_(constructor)> .
+
+:constructor_37  a    :Constructor ;
+        :name         "March" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/March_Engineering> .
+
+:constructor_16  a    :Constructor ;
+        :name         "BAR" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/British_American_Racing> .
+
+:constructor_187  a   :Constructor ;
+        :name         "McLaren-Ford" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Team_McLaren> .
+
+:constructor_166  a   :Constructor ;
+        :name         "Virgin" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Virgin_Racing> .
+
+:constructor_87  a    :Constructor ;
+        :name         "Cooper" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Cooper_Car_Company> .
+
+:constructor_145  a   :Constructor ;
+        :name         "BMW" ;
+        :nationality  "German" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/BMW> .
+
+:constructor_66  a    :Constructor ;
+        :name         "BRM" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/BRM> .
+
+:constructor_124  a   :Constructor ;
+        :name         "Tec-Mec" ;
+        :nationality  "Italian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Tec-Mec> .
+
+:constructor_45  a    :Constructor ;
+        :name         "Osella" ;
+        :nationality  "Italian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Osella> .
+
+:constructor_103  a   :Constructor ;
+        :name         "MBM" ;
+        :nationality  "Swiss" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Monteverdi_Basel_Motors> .
+
+:constructor_24  a    :Constructor ;
+        :name         "Stewart" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Stewart_Grand_Prix> .
+
+:constructor_203  a   :Constructor ;
+        :name         "Shadow-Matra" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Shadow_Racing_Cars> .
+
+:constructor_195  a   :Constructor ;
+        :name         "Cooper-BRM" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Cooper_Car_Company> .
+
+:constructor_174  a   :Constructor ;
+        :name         "De Tomaso-Osca" ;
+        :nationality  "Italian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/De_Tomaso> .
+
+:constructor_95  a    :Constructor ;
+        :name         "Porsche" ;
+        :nationality  "German" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Porsche_in_Formula_One> .
+
+:constructor_153  a   :Constructor ;
+        :name         "Cisitalia" ;
+        :nationality  "Italian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Cisitalia> .
+
+:constructor_74  a    :Constructor ;
+        :name         "Maki" ;
+        :nationality  "Japanese" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Maki_(cars)> .
+
+:constructor_132  a   :Constructor ;
+        :name         "Lancia" ;
+        :nationality  "Italian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Lancia_in_Formula_One> .
+
+:constructor_53  a    :Constructor ;
+        :name         "Toleman" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Toleman> .
+
+:constructor_111  a   :Constructor ;
+        :name         "Trevis" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Trevis> .
+
+:constructor_32  a    :Constructor ;
+        :name         "Team Lotus" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Team_Lotus> .
+
+:constructor_11  a    :Constructor ;
+        :name         "Honda" ;
+        :nationality  "Japanese" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Honda_Racing_F1> .
+
+:constructor_211  a   :Constructor ;
+        :name         "Racing Point" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Racing_Point_F1_Team> .
+
+:constructor_182  a   :Constructor ;
+        :name         "Brabham-Ford" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Brabham> .
+
+:constructor_161  a   :Constructor ;
+        :name         "Adams" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Adams_(constructor)> .
+
+:constructor_82  a    :Constructor ;
+        :name         "Matra" ;
+        :nationality  "French" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Matra> .
+
+:constructor_140  a   :Constructor ;
+        :name         "Klenk" ;
+        :nationality  "German" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Klenk> .
+
+:constructor_61  a    :Constructor ;
+        :name         "Kauhsen" ;
+        :nationality  "German" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Kauhsen> .
+
+:constructor_8  a     :Constructor ;
+        :name         "Super Aguri" ;
+        :nationality  "Japanese" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Super_Aguri_F1> .
+
+:constructor_40  a    :Constructor ;
+        :name         "Lambo" ;
+        :nationality  "Italian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Modena_(racing_team)> .
+
+:constructor_119  a   :Constructor ;
+        :name         "Moore" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Moore_(constructor)> .
+
+:constructor_19  a    :Constructor ;
+        :name         "Jaguar" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Jaguar_Racing> .
+
+:constructor_190  a   :Constructor ;
+        :name         "Eagle-Weslake" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Anglo_American_Racers> .
+
+:constructor_90  a    :Constructor ;
+        :name         "Protos" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Protos_(constructor)> .
+
+:constructor_169  a   :Constructor ;
+        :name         "Cooper-Borgward" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Cooper_Car_Company> .
+
+:constructor_148  a   :Constructor ;
+        :name         "Frazer Nash" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Frazer_Nash> .
+
+:constructor_69  a    :Constructor ;
+        :name         "McGuire" ;
+        :nationality  "Australian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/McGuire_(Formula_One)> .
+
+:constructor_127  a   :Constructor ;
+        :name         "OSCA" ;
+        :nationality  "Italian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Officine_Specializate_Costruzione_Automobili> .
+
+:constructor_48  a    :Constructor ;
+        :name         "Rial" ;
+        :nationality  "German" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Rial_%28racing_team%29> .
+
+:constructor_106  a   :Constructor ;
+        :name         "Scarab" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Scarab_(constructor)> .
+
+:constructor_27  a    :Constructor ;
+        :name         "Ligier" ;
+        :nationality  "French" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Ligier> .
+
+:constructor_206  a   :Constructor ;
+        :name         "Marussia" ;
+        :nationality  "Russian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Marussia_F1> .
+
+:constructor_198  a   :Constructor ;
+        :name         "McLaren-Alfa Romeo" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/McLaren_(racing)> .
+
+:constructor_177  a   :Constructor ;
+        :name         "Lotus-Borgward" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Team_Lotus> .
+
+:constructor_98  a    :Constructor ;
+        :name         "Stebro" ;
+        :nationality  "Canadian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Stebro> .
+
+:constructor_156  a   :Constructor ;
+        :name         "Marchese" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Marchese_(constructor)> .
+
+:constructor_77  a    :Constructor ;
+        :name         "Trojan" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Trojan_(Racing_team)> .
+
+:constructor_135  a   :Constructor ;
+        :name         "Pawl" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Pawl_(constructor)> .
+
+:constructor_3  a     :Constructor ;
+        :name         "Williams" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Williams_Grand_Prix_Engineering> .
+
+:constructor_56  a    :Constructor ;
+        :name         "Fittipaldi" ;
+        :nationality  "Brazilian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Fittipaldi_%28constructor%29> .
+
+:constructor_114  a   :Constructor ;
+        :name         "Kuzma" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Kuzma_(constructor)> .
+
+:constructor_35  a    :Constructor ;
+        :name         "Dallara" ;
+        :nationality  "Italian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Dallara> .
+
+:constructor_14  a    :Constructor ;
+        :name         "Spyker MF1" ;
+        :nationality  "Dutch" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Midland_F1_Racing> .
+
+:constructor_214  a   :Constructor ;
+        :name         "Alpine F1 Team" ;
+        :nationality  "French" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Alpine_F1_Team> .
+
+:constructor_185  a   :Constructor ;
+        :name         "LDS-Alfa Romeo" ;
+        :nationality  "South African" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/LDS_(automobile)> .
+
+:constructor_164  a   :Constructor ;
+        :name         "HRT" ;
+        :nationality  "Spanish" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Hispania_Racing> .
+
+:constructor_85  a    :Constructor ;
+        :name         "Bellasi" ;
+        :nationality  "Swiss" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Bellasi> .
+
+:constructor_143  a   :Constructor ;
+        :name         "Del Roy" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Del_Roy> .
+
+:constructor_64  a    :Constructor ;
+        :name         "Hesketh" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Hesketh_Racing> .
+
+:constructor_122  a   :Constructor ;
+        :name         "Sutton" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Sutton_(constructor)> .
+
+:constructor_101  a   :Constructor ;
+        :name         "JBW" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/JBW> .
+
+:constructor_22  a    :Constructor ;
+        :name         "Benetton" ;
+        :nationality  "Italian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Benetton_Formula> .
+
+:constructor_201  a   :Constructor ;
+        :name         "Lotus-Pratt &amp; Whitney" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Team_Lotus> .
+
+:constructor_193  a   :Constructor ;
+        :name         "Cooper-ATS" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Cooper_Car_Company> .
+
+:constructor_172  a   :Constructor ;
+        :name         "Lotus-Climax" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Team_Lotus> .
+
+:constructor_93  a    :Constructor ;
+        :name         "RE" ;
+        :nationality  "Rhodesian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/RE_%28automobile%29> .
+
+:constructor_151  a   :Constructor ;
+        :name         "ERA" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/English_Racing_Automobiles> .
+
+:constructor_72  a    :Constructor ;
+        :name         "Kojima" ;
+        :nationality  "Japanese" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Kojima_Engineering> .
+
+:constructor_130  a   :Constructor ;
+        :name         "Bugatti" ;
+        :nationality  "French" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Bugatti> .
+
+:constructor_51  a    :Constructor ;
+        :name         "Alfa Romeo" ;
+        :nationality  "Swiss" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Alfa_Romeo_in_Formula_One> .
+
+:constructor_30  a    :Constructor ;
+        :name         "Pacific" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Pacific_Racing> .
+
+:constructor_109  a   :Constructor ;
+        :name         "Phillips" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Phillips_(constructor)> .
+
+:constructor_209  a   :Constructor ;
+        :name         "Manor Marussia" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Manor_Motorsport> .
+
+:constructor_180  a   :Constructor ;
+        :name         "Lotus-Ford" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Team_Lotus> .
+
+:constructor_80  a    :Constructor ;
+        :name         "Iso Marlboro" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Iso_Marlboro> .
+
+:constructor_159  a   :Constructor ;
+        :name         "Olson" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Olson_(constructor)> .
+
+:constructor_6  a     :Constructor ;
+        :name         "Ferrari" ;
+        :nationality  "Italian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Scuderia_Ferrari> .
+
+:constructor_138  a   :Constructor ;
+        :name         "Nichels" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Nichels> .
+
+:constructor_59  a    :Constructor ;
+        :name         "Wolf" ;
+        :nationality  "Canadian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Walter_Wolf_Racing> .
+
+:constructor_117  a   :Constructor ;
+        :name         "Aston Martin" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Aston_Martin_in_Formula_One> .
+
+:constructor_38  a    :Constructor ;
+        :name         "Andrea Moda" ;
+        :nationality  "Italian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Andrea_Moda_Formula> .
+
+:constructor_17  a    :Constructor ;
+        :name         "Jordan" ;
+        :nationality  "Irish" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Jordan_Grand_Prix> .
+
+:constructor_188  a   :Constructor ;
+        :name         "McLaren-Serenissima" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Team_McLaren> .
+
+:constructor_167  a   :Constructor ;
+        :name         "Cooper-Maserati" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Cooper_Car_Company> .
+
+:constructor_88  a    :Constructor ;
+        :name         "Eagle" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Anglo_American_Racers> .
+
+:constructor_146  a   :Constructor ;
+        :name         "EMW" ;
+        :nationality  "East German" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Eisenacher_Motorenwerk> .
+
+:constructor_67  a    :Constructor ;
+        :name         "Penske" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Penske_Racing> .
+
+:constructor_125  a   :Constructor ;
+        :name         "Connaught" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Connaught_Engineering> .
+
+:constructor_46  a    :Constructor ;
+        :name         "Onyx" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Onyx_(racing_team)> .
+
+:constructor_104  a   :Constructor ;
+        :name         "Behra-Porsche" ;
+        :nationality  "Italian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Behra-Porsche> .
+
+:constructor_25  a    :Constructor ;
+        :name         "Tyrrell" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Tyrrell_Racing> .
+
+:constructor_204  a   :Constructor ;
+        :name         "Brabham-Alfa Romeo" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Brabham> .
+
+:constructor_196  a   :Constructor ;
+        :name         "Matra-Ford" ;
+        :nationality  "French" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Matra> .
+
+:constructor_175  a   :Constructor ;
+        :name         "De Tomaso-Alfa Romeo" ;
+        :nationality  "Italian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/De_Tomaso> .
+
+:constructor_96  a    :Constructor ;
+        :name         "Derrington" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Derrington-Francis> .
+
+:constructor_154  a   :Constructor ;
+        :name         "Talbot-Lago" ;
+        :nationality  "French" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Talbot-Lago> .
+
+:constructor_75  a    :Constructor ;
+        :name         "Embassy Hill" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Hill_(constructor)> .
+
+:constructor_1  a     :Constructor ;
+        :name         "McLaren" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/McLaren> .
+
+:constructor_133  a   :Constructor ;
+        :name         "HWM" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Hersham_and_Walton_Motors> .
+
+:constructor_54  a    :Constructor ;
+        :name         "ATS" ;
+        :nationality  "Italian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/ATS_(wheels)> .
+
+:constructor_112  a   :Constructor ;
+        :name         "Meskowski" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Meskowski> .
+
+:constructor_33  a    :Constructor ;
+        :name         "Larrousse" ;
+        :nationality  "French" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Larrousse> .
+
+:constructor_12  a    :Constructor ;
+        :name         "Spyker" ;
+        :nationality  "Dutch" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Spyker_F1> .
+
+:constructor_183  a   :Constructor ;
+        :name         "Brabham-Climax" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Brabham> .
+
+:constructor_162  a   :Constructor ;
+        :name         "Snowberger" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Snowberger> .
+
+:constructor_83  a    :Constructor ;
+        :name         "Politoys" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Frank_Williams_Racing_Cars> .
+
+:constructor_9  a     :Constructor ;
+        :name         "Red Bull" ;
+        :nationality  "Austrian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Red_Bull_Racing> .
+
+:constructor_141  a   :Constructor ;
+        :name         "Simca" ;
+        :nationality  "French" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Simca> .
+
+:constructor_62  a    :Constructor ;
+        :name         "Rebaque" ;
+        :nationality  "Mexican" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Rebaque> .
+
+:constructor_120  a   :Constructor ;
+        :name         "Dunn" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Dunn_Engineering> .
+
+:constructor_41  a    :Constructor ;
+        :name         "Leyton House" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Leyton_House> .
+
+:constructor_20  a    :Constructor ;
+        :name         "Prost" ;
+        :nationality  "French" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Prost_Grand_Prix> .
+
+:constructor_191  a   :Constructor ;
+        :name         "Brabham-Repco" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Brabham> .
+
+:constructor_170  a   :Constructor ;
+        :name         "Cooper-Climax" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Cooper_Car_Company> .
+
+:constructor_91  a    :Constructor ;
+        :name         "Shannon" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Shannon_(Formula_One)> .
+
+:constructor_149  a   :Constructor ;
+        :name         "Sherman" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Sherman_(constructor)> .
+
+:constructor_70  a    :Constructor ;
+        :name         "Boro" ;
+        :nationality  "Dutch" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Boro_(Formula_One)> .
+
+:constructor_128  a   :Constructor ;
+        :name         "Gordini" ;
+        :nationality  "French" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Gordini> .
+
+:constructor_49  a    :Constructor ;
+        :name         "Zakspeed" ;
+        :nationality  "German" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Zakspeed> .
+
+:constructor_107  a   :Constructor ;
+        :name         "Watson" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/A.J._Watson> .
+
+:constructor_28  a    :Constructor ;
+        :name         "Forti" ;
+        :nationality  "Italian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Forti> .
+
+:constructor_207  a   :Constructor ;
+        :name         "Caterham" ;
+        :nationality  "Malaysian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Caterham_F1> .
+
+:constructor_199  a   :Constructor ;
+        :name         "March-Alfa Romeo" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/March_Engineering> .
+
+:constructor_178  a   :Constructor ;
+        :name         "Cooper-Alfa Romeo" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Cooper_Car_Company> .
+
+:constructor_99  a    :Constructor ;
+        :name         "Emeryson" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Emeryson> .
+
+:constructor_157  a   :Constructor ;
+        :name         "Langley" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Langley_(constructor)> .
+
+:constructor_78  a    :Constructor ;
+        :name         "Amon" ;
+        :nationality  "New Zealander" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Amon_(Formula_One_team)> .
+
+:constructor_4  a     :Constructor ;
+        :name         "Renault" ;
+        :nationality  "French" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Renault_in_Formula_One> .
+
+:constructor_136  a   :Constructor ;
+        :name         "Pankratz" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Pankratz> .
+
+:constructor_57  a    :Constructor ;
+        :name         "Ensign" ;
+        :nationality  "British" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Ensign_%28racing_team%29> .
+
+:constructor_115  a   :Constructor ;
+        :name         "Christensen" ;
+        :nationality  "American" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Christensen_(constructor)> .
+
+:constructor_36  a    :Constructor ;
+        :name         "Fondmetal" ;
+        :nationality  "Italian" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Fondmetal> .
+
+:constructor_15  a    :Constructor ;
+        :name         "Sauber" ;
+        :nationality  "Swiss" ;
+        :wikipedia    <http://en.wikipedia.org/wiki/Sauber> .

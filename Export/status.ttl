@@ -1,0 +1,423 @@
+@prefix :      <http://127.0.0.1:3333/> .
+@prefix owl:   <http://www.w3.org/2002/07/owl#> .
+@prefix rdf:   <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs:  <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix vcard: <http://www.w3.org/2006/vcard/ns#> .
+@prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
+
+:status_49  rdf:type  :Status ;
+        :status   "Track rod" .
+
+:status_1  rdf:type  :Status ;
+        :status   "Finished" .
+
+:status_108  rdf:type  :Status ;
+        :status   "Oil pipe" .
+
+:status_30  rdf:type  :Status ;
+        :status   "Driveshaft" .
+
+:status_71  rdf:type  :Status ;
+        :status   "Fuel rig" .
+
+:status_130  rdf:type  :Status ;
+        :status   "Collision damage" .
+
+:status_43  rdf:type  :Status ;
+        :status   "Exhaust" .
+
+:status_102  rdf:type  :Status ;
+        :status   "CV joint" .
+
+:status_15  rdf:type  :Status ;
+        :status   "+5 Laps" .
+
+:status_84  rdf:type  :Status ;
+        :status   "Battery" .
+
+:status_56  rdf:type  :Status ;
+        :status   "Engine fire" .
+
+:status_115  rdf:type  :Status ;
+        :status   "+22 Laps" .
+
+:status_28  rdf:type  :Status ;
+        :status   "Driver Seat" .
+
+:status_97  rdf:type  :Status ;
+        :status   "Did not prequalify" .
+
+:status_69  rdf:type  :Status ;
+        :status   "Fuel system" .
+
+:status_128  rdf:type  :Status ;
+        :status   "+42 Laps" .
+
+:status_6  rdf:type  :Status ;
+        :status   "Gearbox" .
+
+:status_50  rdf:type  :Status ;
+        :status   "+17 Laps" .
+
+:status_22  rdf:type  :Status ;
+        :status   "Suspension" .
+
+:status_91  rdf:type  :Status ;
+        :status   "Alternator" .
+
+:status_63  rdf:type  :Status ;
+        :status   "Pneumatics" .
+
+:status_122  rdf:type  :Status ;
+        :status   "+44 Laps" .
+
+:status_35  rdf:type  :Status ;
+        :status   "Refuelling" .
+
+:status_76  rdf:type  :Status ;
+        :status   "Vibrations" .
+
+:status_135  rdf:type  :Status ;
+        :status   "Brake duct" .
+
+:status_48  rdf:type  :Status ;
+        :status   "Fuel pump" .
+
+:status_107  rdf:type  :Status ;
+        :status   "Eye injury" .
+
+:status_89  rdf:type  :Status ;
+        :status   "Safety concerns" .
+
+:status_70  rdf:type  :Status ;
+        :status   "Oil line" .
+
+:status_42  rdf:type  :Status ;
+        :status   "Heat shield fire" .
+
+:status_101  rdf:type  :Status ;
+        :status   "Turbo" .
+
+:status_14  rdf:type  :Status ;
+        :status   "+4 Laps" .
+
+:status_83  rdf:type  :Status ;
+        :status   "Chassis" .
+
+:status_55  rdf:type  :Status ;
+        :status   "+12 Laps" .
+
+:status_114  rdf:type  :Status ;
+        :status   "+18 Laps" .
+
+:status_27  rdf:type  :Status ;
+        :status   "Tyre" .
+
+:status_96  rdf:type  :Status ;
+        :status   "Excluded" .
+
+:status_68  rdf:type  :Status ;
+        :status   "Physical" .
+
+:status_127  rdf:type  :Status ;
+        :status   "+20 Laps" .
+
+:status_5  rdf:type  :Status ;
+        :status   "Engine" .
+
+:status_21  rdf:type  :Status ;
+        :status   "Radiator" .
+
+:status_90  rdf:type  :Status ;
+        :status   "Not restarted" .
+
+:status_62  rdf:type  :Status ;
+        :status   "Not classified" .
+
+:status_121  rdf:type  :Status ;
+        :status   "Magneto" .
+
+:status_34  rdf:type  :Status ;
+        :status   "Water pressure" .
+
+:status_75  rdf:type  :Status ;
+        :status   "Power loss" .
+
+:status_134  rdf:type  :Status ;
+        :status   "+38 Laps" .
+
+:status_47  rdf:type  :Status ;
+        :status   "Water leak" .
+
+:status_106  rdf:type  :Status ;
+        :status   "Fuel pipe" .
+
+:status_19  rdf:type  :Status ;
+        :status   "+9 Laps" .
+
+:status_88  rdf:type  :Status ;
+        :status   "+10 Laps" .
+
+:status_119  rdf:type  :Status ;
+        :status   "+23 Laps" .
+
+:status_41  rdf:type  :Status ;
+        :status   "Broken wing" .
+
+:status_100  rdf:type  :Status ;
+        :status   "Driver unwell" .
+
+:status_13  rdf:type  :Status ;
+        :status   "+3 Laps" .
+
+:status_82  rdf:type  :Status ;
+        :status   "Injury" .
+
+:status_141  rdf:type  :Status ;
+        :status   "Cooling system" .
+
+:status_54  rdf:type  :Status ;
+        :status   "Withdrew" .
+
+:status_113  rdf:type  :Status ;
+        :status   "+25 Laps" .
+
+:status_26  rdf:type  :Status ;
+        :status   "Mechanical" .
+
+:status_95  rdf:type  :Status ;
+        :status   "Fuel leak" .
+
+:status_67  rdf:type  :Status ;
+        :status   "Wheel bearing" .
+
+:status_126  rdf:type  :Status ;
+        :status   "Supercharger" .
+
+:status_39  rdf:type  :Status ;
+        :status   "Technical" .
+
+:status_139  rdf:type  :Status ;
+        :status   "Illness" .
+
+:status_4  rdf:type  :Status ;
+        :status   "Collision" .
+
+:status_20  rdf:type  :Status ;
+        :status   "Spun off" .
+
+:status_61  rdf:type  :Status ;
+        :status   "Wheel nut" .
+
+:status_120  rdf:type  :Status ;
+        :status   "+21 Laps" .
+
+:status_33  rdf:type  :Status ;
+        :status   "Front wing" .
+
+:status_74  rdf:type  :Status ;
+        :status   "Fuel" .
+
+:status_133  rdf:type  :Status ;
+        :status   "+49 Laps" .
+
+:status_46  rdf:type  :Status ;
+        :status   "Wheel rim" .
+
+:status_105  rdf:type  :Status ;
+        :status   "Spark plugs" .
+
+:status_18  rdf:type  :Status ;
+        :status   "+8 Laps" .
+
+:status_87  rdf:type  :Status ;
+        :status   "Crankshaft" .
+
+:status_59  rdf:type  :Status ;
+        :status   "Tyre puncture" .
+
+:status_118  rdf:type  :Status ;
+        :status   "+29 Laps" .
+
+:status_40  rdf:type  :Status ;
+        :status   "Electronics" .
+
+:status_12  rdf:type  :Status ;
+        :status   "+2 Laps" .
+
+:status_9  rdf:type  :Status ;
+        :status   "Hydraulics" .
+
+:status_81  rdf:type  :Status ;
+        :status   "Did not qualify" .
+
+:status_140  rdf:type  :Status ;
+        :status   "Undertray" .
+
+:status_53  rdf:type  :Status ;
+        :status   "+13 Laps" .
+
+:status_112  rdf:type  :Status ;
+        :status   "+15 Laps" .
+
+:status_25  rdf:type  :Status ;
+        :status   "Overheating" .
+
+:status_94  rdf:type  :Status ;
+        :status   "Oil pump" .
+
+:status_66  rdf:type  :Status ;
+        :status   "Fire" .
+
+:status_125  rdf:type  :Status ;
+        :status   "+46 Laps" .
+
+:status_38  rdf:type  :Status ;
+        :status   "Steering" .
+
+:status_79  rdf:type  :Status ;
+        :status   "Drivetrain" .
+
+:status_138  rdf:type  :Status ;
+        :status   "Debris" .
+
+:status_3  rdf:type  :Status ;
+        :status   "Accident" .
+
+:status_60  rdf:type  :Status ;
+        :status   "Out of fuel" .
+
+:status_32  rdf:type  :Status ;
+        :status   "Fuel pressure" .
+
+:status_73  rdf:type  :Status ;
+        :status   "Injured" .
+
+:status_132  rdf:type  :Status ;
+        :status   "ERS" .
+
+:status_45  rdf:type  :Status ;
+        :status   "+11 Laps" .
+
+:status_104  rdf:type  :Status ;
+        :status   "Fatal accident" .
+
+:status_17  rdf:type  :Status ;
+        :status   "+7 Laps" .
+
+:status_86  rdf:type  :Status ;
+        :status   "Halfshaft" .
+
+:status_58  rdf:type  :Status ;
+        :status   "+26 Laps" .
+
+:status_117  rdf:type  :Status ;
+        :status   "+24 Laps" .
+
+:status_99  rdf:type  :Status ;
+        :status   "Distributor" .
+
+:status_11  rdf:type  :Status ;
+        :status   "+1 Lap" .
+
+:status_8  rdf:type  :Status ;
+        :status   "Clutch" .
+
+:status_80  rdf:type  :Status ;
+        :status   "Ignition" .
+
+:status_111  rdf:type  :Status ;
+        :status   "+14 Laps" .
+
+:status_24  rdf:type  :Status ;
+        :status   "Differential" .
+
+:status_93  rdf:type  :Status ;
+        :status   "Safety belt" .
+
+:status_65  rdf:type  :Status ;
+        :status   "Rear wing" .
+
+:status_124  rdf:type  :Status ;
+        :status   "+19 Laps" .
+
+:status_37  rdf:type  :Status ;
+        :status   "Throttle" .
+
+:status_78  rdf:type  :Status ;
+        :status   "Safety" .
+
+:status_137  rdf:type  :Status ;
+        :status   "Damage" .
+
+:status_2  rdf:type  :Status ;
+        :status   "Disqualified" .
+
+:status_109  rdf:type  :Status ;
+        :status   "Axle" .
+
+:status_31  rdf:type  :Status ;
+        :status   "Retired" .
+
+:status_72  rdf:type  :Status ;
+        :status   "Launch control" .
+
+:status_131  rdf:type  :Status ;
+        :status   "Power Unit" .
+
+:status_44  rdf:type  :Status ;
+        :status   "Oil leak" .
+
+:status_103  rdf:type  :Status ;
+        :status   "Water pump" .
+
+:status_16  rdf:type  :Status ;
+        :status   "+6 Laps" .
+
+:status_85  rdf:type  :Status ;
+        :status   "Stalled" .
+
+:status_116  rdf:type  :Status ;
+        :status   "+16 Laps" .
+
+:status_29  rdf:type  :Status ;
+        :status   "Puncture" .
+
+:status_98  rdf:type  :Status ;
+        :status   "Injection" .
+
+:status_129  rdf:type  :Status ;
+        :status   "Engine misfire" .
+
+:status_10  rdf:type  :Status ;
+        :status   "Electrical" .
+
+:status_7  rdf:type  :Status ;
+        :status   "Transmission" .
+
+:status_51  rdf:type  :Status ;
+        :status   "Oil pressure" .
+
+:status_110  rdf:type  :Status ;
+        :status   "Water pipe" .
+
+:status_23  rdf:type  :Status ;
+        :status   "Brakes" .
+
+:status_92  rdf:type  :Status ;
+        :status   "Underweight" .
+
+:status_64  rdf:type  :Status ;
+        :status   "Handling" .
+
+:status_123  rdf:type  :Status ;
+        :status   "+30 Laps" .
+
+:status_36  rdf:type  :Status ;
+        :status   "Wheel" .
+
+:status_136  rdf:type  :Status ;
+        :status   "Seat" .
+
+:status_77  rdf:type  :Status ;
+        :status   "107% Rule" .
