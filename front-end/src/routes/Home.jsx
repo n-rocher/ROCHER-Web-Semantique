@@ -6,6 +6,7 @@ import {
     EuiBasicTable,
     EuiBadge,
     EuiTitle,
+    EuiPanel,
     EuiLink,
 } from '@elastic/eui';
 
@@ -20,6 +21,7 @@ import {
 import '@elastic/charts/dist/theme_only_light.css';
 
 import { getAllGrandPrix, getNumberOfGrandPrixByYear } from "../sparql";
+import { getIRI } from "../util";
 
 const BADGE_COLORS = ["#FCF7BC", "#FEA27F", "#BADA55", "#FFA500", "#0000FF"]
 const CHART_COLOR = "#FF1801"
@@ -61,8 +63,7 @@ export default class Home extends React.Component {
             textOnly: true,
             truncateText: false,
             render: (name, data) => {
-                const race_id = data.uri.value.substring(data.uri.value.lastIndexOf('/') + 1)
-                return <EuiLink href={"/grand-prix/" + race_id}>
+                return <EuiLink href={"/grand-prix/" + getIRI(data.uri.value)}>
                     {data.year.value} — {name.value}
                 </EuiLink>
             }
@@ -73,7 +74,7 @@ export default class Home extends React.Component {
             textOnly: true,
             truncateText: true,
             render: (_, data) => {
-                return <EuiLink href={data.winner_uri.value} target="_blank">
+                return <EuiLink href={"/driver/" + getIRI(data.winner_uri.value)} target="_blank">
                     {data.winner_forename.value} {data.winner_surname.value}
                 </EuiLink>
             }
@@ -94,37 +95,41 @@ export default class Home extends React.Component {
 
             <EuiTitle style={{ marginBottom: 10 }} size="xs"><h4>Nombre de Grand Prix par année</h4></EuiTitle>
 
-            <Chart size={{ height: 350 }}>
-                <Settings
-                    theme={{ colors: { vizColors: [CHART_COLOR] } }}
-                    showLegend={false}
-                />
-                <BarSeries
-                    id="bars"
-                    name="0"
-                    data={this.state.numberOfgrandPrixByYear}
-                    xAccessor={0}
-                    yAccessors={[1]}
-                />
-                <Axis
-                    id="bottom-axis"
-                    position="bottom"
-                />
-                <Axis
-                    id="left-axis"
-                    position="left"
-                    showGridLines
-                    tickFormat={(d) => Number(d).toFixed(0)}
-                />
-            </Chart>
+            <EuiPanel paddingSize="m" hasBorder>
+                <Chart size={{ height: 350 }}>
+                    <Settings
+                        theme={{ colors: { vizColors: [CHART_COLOR] } }}
+                        showLegend={false}
+                    />
+                    <BarSeries
+                        id="bars"
+                        name="0"
+                        data={this.state.numberOfgrandPrixByYear}
+                        xAccessor={0}
+                        yAccessors={[1]}
+                    />
+                    <Axis
+                        id="bottom-axis"
+                        position="bottom"
+                    />
+                    <Axis
+                        id="left-axis"
+                        position="left"
+                        showGridLines
+                        tickFormat={(d) => Number(d).toFixed(0)}
+                    />
+                </Chart>
+            </EuiPanel>
 
             <EuiTitle style={{ marginTop: 25, marginBottom: 10 }} size="xs"><h4>Accéder aux informations sur les Grand Prix</h4></EuiTitle>
 
-            <EuiBasicTable
-                tableCaption="Liste des grand prix"
-                items={this.state.grandPrix}
-                columns={this.columns}
-            />
+            <EuiPanel paddingSize="m" hasBorder>
+                <EuiBasicTable
+                    tableCaption="Liste des grand prix"
+                    items={this.state.grandPrix}
+                    columns={this.columns}
+                />
+            </EuiPanel>
 
         </>
     }

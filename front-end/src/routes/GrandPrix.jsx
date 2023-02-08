@@ -4,8 +4,6 @@ import { useLoaderData } from "react-router";
 
 import {
 	EuiTitle,
-	EuiTimelineItem,
-	EuiText,
 	EuiBadge,
 	EuiLink,
 	EuiTextColor,
@@ -16,6 +14,8 @@ import {
 	EuiStat, EuiFlexItem, EuiFlexGroup,
 	formatDate,
 } from '@elastic/eui';
+
+import { getIRI } from "../util";
 
 
 const STATUS_COLOR = {
@@ -29,23 +29,23 @@ const RESULTS_COLUMNS = [
 		field: 'positionOrder',
 		name: 'Classement',
 		align: "center",
-		textOnly: true,
 		width: "100px",
 		render: (positionOrder) => positionOrder?.value,
-	},
-	{
+	}, {
 		field: 'forename',
 		name: 'Pilote',
 		align: "left",
-		textOnly: true,
-		render: (_, data) => <EuiLink href={data?.driver_uri?.value} target="_blank">{data?.forename?.value} {data?.surname?.value}</EuiLink>
+		render: (_, data) => <EuiLink href={"/driver/" + getIRI(data?.driver_uri?.value)} target="_blank">
+			{data?.driver_forename?.value} {data?.driver_surname?.value}
+		</EuiLink>
 	}, {
 		field: 'constructor',
 		name: 'Constructeur',
 		align: "left",
-		textOnly: true,
-		render: (_, data) => <EuiLink href={data?.constructor_uri?.value} target="_blank">{data?.constructor?.value}</EuiLink>
-	}, {
+		render: (_, data) => <EuiLink href={"/constructor/" + getIRI(data?.constructor_uri?.value)} target="_blank">
+			{data?.constructor?.value}
+		</EuiLink>
+	},{
 		field: 'grid',
 		name: 'Positions',
 		align: "center",
@@ -63,8 +63,7 @@ const RESULTS_COLUMNS = [
 		render: (fastestLapTime, data) => {
 			return data.fastestLapTime ? <>{fastestLapTime?.value}<br />{data.fastestLapSpeed?.value} km/h</> : <><br /><br /></>
 		},
-	},
-	{
+	}, {
 		field: 'status',
 		name: 'Status',
 		align: "right",
@@ -78,11 +77,7 @@ export default function GrandPrix() {
 	let [grandPrix, resultats] = useLoaderData()
 	grandPrix = grandPrix[0]
 
-	console.log(grandPrix, resultats)
-
-
 	const timeline = [["fp1_date", "FP1"], ["fp2_date", "FP2"], ["fp3_date", "FP3"], ["sprint_date", "Sprint"], ["qualification_date", "Qualification"], ["gp_date", "Course"]]
-
 
 	return <>
 
@@ -116,11 +111,11 @@ export default function GrandPrix() {
 			}
 		</EuiFlexGroup>
 
-		<EuiTitle style={{ marginTop: 25, marginBottom: 10 }} size="xs"><h4>Résultat du Grand Prix</h4></EuiTitle>
+		<EuiTitle style={{ marginTop: 25, marginBottom: 10 }} size="xs"><h4>Résultat de course</h4></EuiTitle>
 
 		<EuiPanel paddingSize="m" hasBorder>
 			<EuiBasicTable
-				tableCaption="Résultat du Grand Prix"
+				tableCaption="Résultat de course"
 				items={resultats}
 				columns={RESULTS_COLUMNS}
 			/>

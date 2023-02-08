@@ -100,7 +100,7 @@ export async function getResults(grandprix_iri) {
                     :type ?status_type.
                 
             ?driver_uri a :Driver ;
-                    :name [ a :DriverName; :forename ?forename; :surname ?surname ].
+                    :name [ a :DriverName; :forename ?driver_forename; :surname ?driver_surname ].
             
             ?constructor_uri a :Constructor ;
                     :name ?constructor.
@@ -136,14 +136,69 @@ export async function getNumberOfGrandPrixByYear() {
     return requestSPARQL(query)
 }
 
+export async function getDriver(driver_iri) {
+    const query = `
+    PREFIX : <http://127.0.0.1:3333/>
+    SELECT * WHERE {
+        :${driver_iri} a :Driver ;
+        :dateOfBirth ?dateOfBirth ;
+        :code ?code ;
+        :nationality ?nationality ;
+        :wikipedia ?wikipedia ;
+        :name [ a :DriverName; :forename ?forename; :surname ?surname ].
+      } 
+    `
+    return requestSPARQL(query)
+}
 
+export async function getDriverResults(driver_iri) {
+    const query = `
+        PREFIX : <http://127.0.0.1:3333/>
+        PREFIX dbo: <http://dbpedia.org/ontology/>
+        PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        
+        SELECT * WHERE {
+        ?result_uri a :Result ;
+            :driver :${driver_iri};
+        
+            :race ?gp_uri ;
+            :constructor ?constructor_uri;
+        
+            :driverNumber ?driverNumber;
+            :grid ?grid ;
+            :status ?status_uri .
+        
+        ?status_uri a :Status ;
+            :status ?status;
+            :type ?status_type.
+        
+        ?constructor_uri a :Constructor ;
+            :name ?constructor.
+        
+        ?gp_uri a dbo:GrandPrix ;
+            :name ?gp_name;
+            :year ?gp_year;
+            :dateTime [ :date ?gp_date; ] .
+        
+        OPTIONAL { ?result_uri :positionOrder ?positionOrder ; }
+        
+        FILTER(LANG(?status) = "fr")
+        
+        } ORDER BY DESC(?gp_date)
+    `
+    return requestSPARQL(query)
+}
+
+export async function getConstructor() {
+    return []
+}
+export async function getConstructorResults() {
+    return []
+}
 
 /*
-
-
-
-
-
 
 PREFIX dbo: <http://dbpedia.org/ontology/>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
