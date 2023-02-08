@@ -161,10 +161,7 @@
 
 :name a rdf:Property .
 :name rdfs:domain :Driver .
-:name rdfs:range xsd:string .
-
-
-
+:name rdfs:range :DriverName .
 
 
 
@@ -172,36 +169,55 @@
 dbo:GrandPrix a rdf:Class .
 
 :year a rdf:Property .
-:year rdfs:domain dbo:GrandPrix .
+:year rdfs:domain :GrandPrix .
 :year rdfs:range xsd:int .
 
 :round a rdf:Property .
-:round rdfs:domain dbo:GrandPrix .
+:round rdfs:domain :GrandPrix .
 :round rdfs:range xsd:int .
 
 :circuit a rdf:Property .
-:circuit rdfs:domain dbo:GrandPrix .
+:circuit rdfs:domain :GrandPrix .
 :circuit rdfs:range :Circuit .
 
 :name a rdf:Property .
-:name rdfs:domain dbo:GrandPrix .
+:name rdfs:domain :GrandPrix .
 :name rdfs:range xsd:string .
 
 :wikipedia a rdf:Property .
-:wikipedia rdfs:domain dbo:GrandPrix .
+:wikipedia rdfs:domain :GrandPrix .
 :wikipedia rdfs:range xsd:string .
 
 :DateTime a rdf:Class .
 
 :date a rdf:Property .
 :date rdfs:domain :DateTime .
+:date rdfs:range xsd:date .
+
+:time a rdf:Property .
+:time rdfs:domain :DateTime .
+:time rdfs:range xsd:time .
+
+:fp1 a rdf:Property .
+:fp1 rdfs:domain :GrandPrix .
+:fp1 rdfs:range :DateTime .
+
+:fp2 a rdf:Property .
+:fp2 rdfs:domain :GrandPrix .
+:fp2 rdfs:range :DateTime .
+
+:fp3 a rdf:Property .
+:fp3 rdfs:domain :GrandPrix .
+:fp3 rdfs:range :DateTime .
+
+:qualification a rdf:Property .
+:qualification rdfs:domain :GrandPrix .
+:qualification rdfs:range :DateTime .
 
 :sprint a rdf:Property .
-:sprint rdfs:domain dbo:GrandPrix .
-:sprint rdfs:range xsd:string .
-
-:DateTime a rdf:Class .
+:sprint rdfs:domain :GrandPrix .
+:sprint rdfs:range :DateTime .
 
 :dateTime a rdf:Property .
-:dateTime rdfs:domain dbo:GrandPrix .
-:dateTime rdfs:range xsd:string .
+:dateTime rdfs:domain :GrandPrix .
+:dateTime rdfs:range :DateTime .

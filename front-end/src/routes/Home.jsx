@@ -5,7 +5,7 @@ import {
     formatDate,
     EuiBasicTable,
     EuiBadge,
-    EuiTitle ,
+    EuiTitle,
     EuiLink,
 } from '@elastic/eui';
 
@@ -19,9 +19,10 @@ import {
 
 import '@elastic/charts/dist/theme_only_light.css';
 
-import { getGrandPrix, getNumberOfGrandPrixByYear } from "../sparql";
+import { getAllGrandPrix, getNumberOfGrandPrixByYear } from "../sparql";
 
 const BADGE_COLORS = ["#FCF7BC", "#FEA27F", "#BADA55", "#FFA500", "#0000FF"]
+const CHART_COLOR = "#FF1801"
 
 export default class Home extends React.Component {
 
@@ -33,12 +34,11 @@ export default class Home extends React.Component {
     }
 
     componentDidMount() {
-        getGrandPrix().then(data => {
+        getAllGrandPrix().then(data => {
             this.setState({ grandPrixLoading: false, grandPrix: data })
         })
 
         getNumberOfGrandPrixByYear().then(data => {
-            console.log(data)
             data = data.map(v => [parseInt(v.year.value), parseInt(v.value.value)])
             this.setState({ numberOfgrandPrixByYearLoading: false, numberOfgrandPrixByYear: data })
         })
@@ -61,7 +61,8 @@ export default class Home extends React.Component {
             textOnly: true,
             truncateText: false,
             render: (name, data) => {
-                return <EuiLink href={data.uri.value}>
+                const race_id = data.uri.value.substring(data.uri.value.lastIndexOf('/') + 1)
+                return <EuiLink href={"/grand-prix/" + race_id}>
                     {data.year.value} — {name.value}
                 </EuiLink>
             }
@@ -91,10 +92,11 @@ export default class Home extends React.Component {
     render() {
         return <>
 
-            <EuiTitle style={{marginBottom: 10}} size="xs"><h4>Nombre de Grand Prix par année</h4></EuiTitle>
+            <EuiTitle style={{ marginBottom: 10 }} size="xs"><h4>Nombre de Grand Prix par année</h4></EuiTitle>
 
             <Chart size={{ height: 350 }}>
                 <Settings
+                    theme={{ colors: { vizColors: [CHART_COLOR] } }}
                     showLegend={false}
                 />
                 <BarSeries
@@ -116,7 +118,7 @@ export default class Home extends React.Component {
                 />
             </Chart>
 
-            <EuiTitle style={{marginTop: 25, marginBottom: 10}} size="xs"><h4>Accéder aux informations sur les Grand Prix</h4></EuiTitle>
+            <EuiTitle style={{ marginTop: 25, marginBottom: 10 }} size="xs"><h4>Accéder aux informations sur les Grand Prix</h4></EuiTitle>
 
             <EuiBasicTable
                 tableCaption="Liste des grand prix"

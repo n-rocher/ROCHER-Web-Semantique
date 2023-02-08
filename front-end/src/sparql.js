@@ -19,7 +19,7 @@ async function requestSPARQL(sparql) {
 }
 
 
-export async function getGrandPrix() {
+export async function getAllGrandPrix() {
     const query = `
         PREFIX dbo: <http://dbpedia.org/ontology/>
         PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
@@ -27,24 +27,43 @@ export async function getGrandPrix() {
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         SELECT * WHERE {
-        ?uri a dbo:GrandPrix ;
-        :dateTime [ a :DateTime ; :date ?dateTime ] ;
-        :year ?year ;
-        :name ?name  .
+            ?uri a dbo:GrandPrix ;
+            :dateTime [ a :DateTime ; :date ?dateTime ] ;
+            :year ?year ;
+            :name ?name  .
             OPTIONAL {
-            ?race_uri :race ?uri;
-                       :positionOrder "1"^^xsd:int;
-                       :driver ?winner_uri.
-
-            ?winner_uri :name [ :forename ?winner_forename; :surname ?winner_surname ] .
+                ?race_uri :race ?uri;
+                        :positionOrder "1"^^xsd:int;
+                        :driver ?winner_uri.
+                ?winner_uri :name [ :forename ?winner_forename; :surname ?winner_surname ] .
             }
-
         } ORDER BY DESC(?dateTime) LIMIT 50
     `
     return requestSPARQL(query)
 }
 
-
+export async function getGrandPrix(grandprix_iri) {
+    const query = `
+        PREFIX dbo: <http://dbpedia.org/ontology/>
+        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+        PREFIX : <http://127.0.0.1:3333/>
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+        SELECT * WHERE {
+            ?uri a dbo:GrandPrix ;
+            :dateTime [ a :DateTime ; :date ?dateTime ] ;
+            :year ?year ;
+            :name ?name  .
+            OPTIONAL {
+                ?race_uri :race ?uri;
+                        :positionOrder "1"^^xsd:int;
+                        :driver ?winner_uri.
+                ?winner_uri :name [ :forename ?winner_forename; :surname ?winner_surname ] .
+            }
+        } ORDER BY DESC(?dateTime) LIMIT 50
+    `
+    return requestSPARQL(query)
+}
 
 
 export async function getNumberOfGrandPrixByYear() {

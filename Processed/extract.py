@@ -31,6 +31,8 @@ with open("races.json", "r") as ff:
             
             bnode_class = prop["objectMappings"][0]["typeMappings"][0]["valueSource"]["constant"]
             print(f"\n:{bnode_class} a rdf:Class .")
+            type_name = bnode_class
+            type_prefix = ""
 
             if bnode_class not in bnode_class_defined:
 

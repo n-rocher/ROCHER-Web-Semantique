@@ -14,6 +14,9 @@ import { EuiProvider } from '@elastic/eui';
 
 import '@elastic/eui/dist/eui_theme_light.css';
 
+import { getGrandPrix } from "./sparql";
+
+
 const router = createBrowserRouter([
   {
     path: "/",
@@ -21,9 +24,12 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
   },
   {
-    path: "/grand-prix/:grandPrixId",
+    path: "/grand-prix/:grandPrix_IRI",
     element: <GrandPrix />,
     errorElement: <ErrorPage />,
+    loader: async ({ params }) => {
+      return getGrandPrix(params.grandPrix_IRI)
+    },
   },
 ]);
 
