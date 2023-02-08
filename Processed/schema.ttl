@@ -65,6 +65,9 @@
 :status rdfs:range :Status .
 
 
+
+
+
 :Circuit a rdf:Class .
 
 :name a rdf:Property .
@@ -159,6 +162,12 @@
 :name a rdf:Property .
 :name rdfs:domain :Driver .
 :name rdfs:range xsd:string .
+
+
+
+
+
+
 
 dbo:GrandPrix a rdf:Class .
 
