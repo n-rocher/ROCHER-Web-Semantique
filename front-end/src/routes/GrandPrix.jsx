@@ -1,5 +1,4 @@
 
-import { getGrandPrix } from "../sparql";
 import React from "react";
 
 export default class GrandPrix extends React.Component {
