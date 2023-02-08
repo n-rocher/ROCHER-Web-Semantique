@@ -75,6 +75,7 @@ const RESULTS_COLUMNS = [
 export default function GrandPrix() {
 
 	let [grandPrix, resultats] = useLoaderData()
+	console.log(grandPrix)
 	grandPrix = grandPrix[0]
 
 	const timeline = [["fp1_date", "FP1"], ["fp2_date", "FP2"], ["fp3_date", "FP3"], ["sprint_date", "Sprint"], ["qualification_date", "Qualification"], ["gp_date", "Course"]]
@@ -96,17 +97,19 @@ export default function GrandPrix() {
 		<EuiFlexGroup>
 			{
 				timeline.map(type => {
-					let time = grandPrix[type[0].split("_")[0] + "_time"]?.value
-					return grandPrix[type[0]] && <EuiFlexItem>
-						<EuiPanel paddingSize="s" hasBorder>
-							<EuiStat
-								title={<p>{formatDate(grandPrix[type[0]]?.value, "shortDate")}{time && <><br /><h6>{time}</h6></>}</p>}
-								description={type[1]}
-								textAlign="center"
-								titleSize="xs"
-							/>
-						</EuiPanel>
-					</EuiFlexItem>
+					if (type[0] in grandPrix) {
+						let time = grandPrix[type[0].split("_")[0] + "_time"]?.value
+						return grandPrix[type[0]] && <EuiFlexItem>
+							<EuiPanel paddingSize="s" hasBorder>
+								<EuiStat
+									title={<p>{formatDate(grandPrix[type[0]]?.value, "shortDate")}{time && <><br /><h6>{time}</h6></>}</p>}
+									description={type[1]}
+									textAlign="center"
+									titleSize="xs"
+								/>
+							</EuiPanel>
+						</EuiFlexItem>
+					}
 				})
 			}
 		</EuiFlexGroup>

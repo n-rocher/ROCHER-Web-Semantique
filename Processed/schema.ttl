@@ -88,7 +88,7 @@
 
 :wikipedia a rdf:Property .
 :wikipedia rdfs:domain :Circuit .
-:wikipedia rdfs:range xsd:string .
+:wikipedia rdfs:range xsd:anyURI .
 
 
 
@@ -106,7 +106,7 @@
 
 :wikipedia a rdf:Property .
 :wikipedia rdfs:domain :Constructor .
-:wikipedia rdfs:range xsd:string .
+:wikipedia rdfs:range xsd:anyURI .
 
 
 
@@ -141,7 +141,7 @@
 
 :wikipedia a rdf:Property .
 :wikipedia rdfs:domain :Driver .
-:wikipedia rdfs:range xsd:string .
+:wikipedia rdfs:range xsd:anyURI .
 
 :DriverName a rdf:Class .
 
@@ -180,7 +180,7 @@ dbo:GrandPrix a rdf:Class .
 
 :wikipedia a rdf:Property .
 :wikipedia rdfs:domain :GrandPrix .
-:wikipedia rdfs:range xsd:string .
+:wikipedia rdfs:range xsd:anyURI .
 
 :DateTime a rdf:Class .
 

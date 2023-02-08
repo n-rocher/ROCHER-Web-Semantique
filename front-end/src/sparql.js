@@ -52,20 +52,21 @@ export async function getGrandPrix(grandprix_iri) {
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 
         SELECT * WHERE {
-            :${grandprix_iri} a dbo:GrandPrix ;
-            :name ?name;
-            :year ?year;
-            :circuit ?circuit_uri;
-            :wikipedia ?wikipedia_url ;
-            :dateTime [ :date ?gp_date; :time ?gp_time; ] .
+            :${grandprix_iri} a dbo:GrandPrix .
+            OPTIONAL  {:${grandprix_iri} :name ?name }
+            OPTIONAL  {:${grandprix_iri} :year ?year}
+            OPTIONAL  {:${grandprix_iri} :circuit ?circuit_uri}
+            OPTIONAL  {:${grandprix_iri} :wikipedia ?wikipedia_url }
+            OPTIONAL  {:${grandprix_iri} :dateTime [ :date ?gp_date; :time ?gp_time; ] }
 
-            ?circuit_uri a :Circuit;
+            OPTIONAL  { ?circuit_uri a :Circuit;
                 :name ?circuit_name ;
                 :location ?circuit_location ;
                 :country ?circuit_country ;
                 :lat ?circuit_lat ;
                 :lng ?circuit_lng ;
                 :wikipedia ?circuit_wikipedia .
+            }
             
             OPTIONAL  { :${grandprix_iri} :fp1 [  :date ?fp1_date; :time ?fp1_time; ] }
             OPTIONAL  { :${grandprix_iri} :fp2 [  :date ?fp2_date; :time ?fp2_time; ] }
@@ -139,14 +140,29 @@ export async function getNumberOfGrandPrixByYear() {
 export async function getDriver(driver_iri) {
     const query = `
     PREFIX : <http://127.0.0.1:3333/>
+    PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+    PREFIX dbo: <http://dbpedia.org/ontology/>
     SELECT * WHERE {
         :${driver_iri} a :Driver ;
-        :dateOfBirth ?dateOfBirth ;
-        :code ?code ;
-        :nationality ?nationality ;
-        :wikipedia ?wikipedia ;
         :name [ a :DriverName; :forename ?forename; :surname ?surname ].
-      } 
+
+        OPTIONAL { :${driver_iri} :dateOfBirth ?dateOfBirth }
+        OPTIONAL { :${driver_iri} :code ?code }
+        OPTIONAL { :${driver_iri} :nationality ?nationality }
+        OPTIONAL { :${driver_iri} :wikipedia ?wikipedia }
+      
+        OPTIONAL {
+            SERVICE <http://dbpedia.org/sparql> {
+              ?wikipedia  foaf:primaryTopic ?page_dbo.
+              OPTIONAL{
+                ?page_dbo dbo:abstract ?abstract.
+                FILTER(LANG(?abstract) = "fr")
+              }
+              OPTIONAL{ ?page_dbo dbo:thumbnail ?thumbnail. }
+            }
+          }
+    
+    } 
     `
     return requestSPARQL(query)
 }
