@@ -6,418 +6,557 @@
 @prefix xsd:   <http://www.w3.org/2001/XMLSchema#> .
 
 :status_49  rdf:type  :Status ;
-        :status   "Track rod" .
+        :status   "Biellette de piste"@fr , "Track rod"@en ;
+        :type     "out" .
 
 :status_1  rdf:type  :Status ;
-        :status   "Finished" .
+        :status   "Terminé"@fr , "Finished"@en ;
+        :type     "ok" .
 
 :status_108  rdf:type  :Status ;
-        :status   "Oil pipe" .
+        :status   "Tuyau d'huile"@fr , "Oil pipe"@en ;
+        :type     "out" .
 
 :status_30  rdf:type  :Status ;
-        :status   "Driveshaft" .
+        :status   "Arbre de transmission"@fr , "Driveshaft"@en ;
+        :type     "out" .
 
 :status_71  rdf:type  :Status ;
-        :status   "Fuel rig" .
+        :status   "Dispositif d'alimentation en carburant"@fr , "Fuel rig"@en ;
+        :type     "out" .
 
 :status_130  rdf:type  :Status ;
-        :status   "Collision damage" .
+        :status   "Dommages par collision"@fr , "Collision damage"@en ;
+        :type     "out" .
 
 :status_43  rdf:type  :Status ;
-        :status   "Exhaust" .
+        :status   "Échappement"@fr , "Exhaust"@en ;
+        :type     "out" .
 
 :status_102  rdf:type  :Status ;
-        :status   "CV joint" .
+        :status   "Joint CV"@fr , "CV joint"@en ;
+        :type     "out" .
 
 :status_15  rdf:type  :Status ;
-        :status   "+5 Laps" .
+        :status   "+5 tours"@fr , "+5 Laps"@en ;
+        :type     "lap" .
 
 :status_84  rdf:type  :Status ;
-        :status   "Battery" .
+        :status   "Batterie"@fr , "Battery"@en ;
+        :type     "out" .
 
 :status_56  rdf:type  :Status ;
-        :status   "Engine fire" .
+        :status   "Feu moteur"@fr , "Engine fire"@en ;
+        :type     "out" .
 
 :status_115  rdf:type  :Status ;
-        :status   "+22 Laps" .
+        :status   "+22 tours"@fr , "+22 Laps"@en ;
+        :type     "lap" .
 
 :status_28  rdf:type  :Status ;
-        :status   "Driver Seat" .
+        :status   "Siège du conducteur"@fr , "Driver Seat"@en ;
+        :type     "out" .
 
 :status_97  rdf:type  :Status ;
-        :status   "Did not prequalify" .
+        :status   "N'a pas été préqualifié"@fr , "Did not prequalify"@en ;
+        :type     "out" .
 
 :status_69  rdf:type  :Status ;
-        :status   "Fuel system" .
+        :status   "Circuit de carburant"@fr , "Fuel system"@en ;
+        :type     "out" .
 
 :status_128  rdf:type  :Status ;
-        :status   "+42 Laps" .
+        :status   "+42 tours"@fr , "+42 Laps"@en ;
+        :type     "lap" .
 
 :status_6  rdf:type  :Status ;
-        :status   "Gearbox" .
+        :status   "Boîte de vitesses"@fr , "Gearbox"@en ;
+        :type     "out" .
 
 :status_50  rdf:type  :Status ;
-        :status   "+17 Laps" .
+        :status   "+17 tours"@fr , "+17 Laps"@en ;
+        :type     "lap" .
 
 :status_22  rdf:type  :Status ;
-        :status   "Suspension" .
+        :status   "Suspension"@fr , "Suspension"@en ;
+        :type     "out" .
 
 :status_91  rdf:type  :Status ;
-        :status   "Alternator" .
+        :status   "Alternateur"@fr , "Alternator"@en ;
+        :type     "out" .
 
 :status_63  rdf:type  :Status ;
-        :status   "Pneumatics" .
+        :status   "Pneumatique"@fr , "Pneumatics"@en ;
+        :type     "out" .
 
 :status_122  rdf:type  :Status ;
-        :status   "+44 Laps" .
+        :status   "+44 tours"@fr , "+44 Laps"@en ;
+        :type     "lap" .
 
 :status_35  rdf:type  :Status ;
-        :status   "Refuelling" .
+        :status   "Ravitaillement en carburant"@fr , "Refuelling"@en ;
+        :type     "out" .
 
 :status_76  rdf:type  :Status ;
-        :status   "Vibrations" .
+        :status   "Vibrations"@fr , "Vibrations"@en ;
+        :type     "out" .
 
 :status_135  rdf:type  :Status ;
-        :status   "Brake duct" .
+        :status   "Conduit de freinage"@fr , "Brake duct"@en ;
+        :type     "out" .
 
 :status_48  rdf:type  :Status ;
-        :status   "Fuel pump" .
+        :status   "Pompe à essence"@fr , "Fuel pump"@en ;
+        :type     "out" .
 
 :status_107  rdf:type  :Status ;
-        :status   "Eye injury" .
+        :status   "Blessure aux yeux"@fr , "Eye injury"@en ;
+        :type     "out" .
 
 :status_89  rdf:type  :Status ;
-        :status   "Safety concerns" .
+        :status   "Problèmes de sécurité"@fr , "Safety concerns"@en ;
+        :type     "out" .
 
 :status_70  rdf:type  :Status ;
-        :status   "Oil line" .
+        :status   "Ligne d'huile"@fr , "Oil line"@en ;
+        :type     "out" .
 
 :status_42  rdf:type  :Status ;
-        :status   "Heat shield fire" .
+        :status   "Bouclier thermique"@fr , "Heat shield fire"@en ;
+        :type     "out" .
 
 :status_101  rdf:type  :Status ;
-        :status   "Turbo" .
+        :status   "Turbo"@fr , "Turbo"@en ;
+        :type     "out" .
 
 :status_14  rdf:type  :Status ;
-        :status   "+4 Laps" .
+        :status   "+4 tours"@fr , "+4 Laps"@en ;
+        :type     "lap" .
 
 :status_83  rdf:type  :Status ;
-        :status   "Chassis" .
+        :status   "Châssis"@fr , "Chassis"@en ;
+        :type     "out" .
 
 :status_55  rdf:type  :Status ;
-        :status   "+12 Laps" .
+        :status   "+12 tours"@fr , "+12 Laps"@en ;
+        :type     "lap" .
 
 :status_114  rdf:type  :Status ;
-        :status   "+18 Laps" .
+        :status   "+18 tours"@fr , "+18 Laps"@en ;
+        :type     "lap" .
 
 :status_27  rdf:type  :Status ;
-        :status   "Tyre" .
+        :status   "Pneu"@fr , "Tyre"@en ;
+        :type     "out" .
 
 :status_96  rdf:type  :Status ;
-        :status   "Excluded" .
+        :status   "Exclu"@fr , "Excluded"@en ;
+        :type     "out" .
 
 :status_68  rdf:type  :Status ;
-        :status   "Physical" .
+        :status   "Physique"@fr , "Physical"@en ;
+        :type     "out" .
 
 :status_127  rdf:type  :Status ;
-        :status   "+20 Laps" .
+        :status   "+20 tours"@fr , "+20 Laps"@en ;
+        :type     "lap" .
 
 :status_5  rdf:type  :Status ;
-        :status   "Engine" .
+        :status   "Moteur"@fr , "Engine"@en ;
+        :type     "out" .
 
 :status_21  rdf:type  :Status ;
-        :status   "Radiator" .
+        :status   "Radiateur"@fr , "Radiator"@en ;
+        :type     "out" .
 
 :status_90  rdf:type  :Status ;
-        :status   "Not restarted" .
+        :status   "Pas de redémarrage"@fr , "Not restarted"@en ;
+        :type     "out" .
 
 :status_62  rdf:type  :Status ;
-        :status   "Not classified" .
+        :status   "Non classé"@fr , "Not classified"@en ;
+        :type     "out" .
 
 :status_121  rdf:type  :Status ;
-        :status   "Magneto" .
+        :status   "Magnéto"@fr , "Magneto"@en ;
+        :type     "out" .
 
 :status_34  rdf:type  :Status ;
-        :status   "Water pressure" .
+        :status   "Pression d'eau"@fr , "Water pressure"@en ;
+        :type     "out" .
 
 :status_75  rdf:type  :Status ;
-        :status   "Power loss" .
+        :status   "Perte de puissance"@fr , "Power loss"@en ;
+        :type     "out" .
 
 :status_134  rdf:type  :Status ;
-        :status   "+38 Laps" .
+        :status   "+38 tours"@fr , "+38 Laps"@en ;
+        :type     "lap" .
 
 :status_47  rdf:type  :Status ;
-        :status   "Water leak" .
+        :status   "Fuite d'eau"@fr , "Water leak"@en ;
+        :type     "out" .
 
 :status_106  rdf:type  :Status ;
-        :status   "Fuel pipe" .
+        :status   "Tuyau de carburant"@fr , "Fuel pipe"@en ;
+        :type     "out" .
 
 :status_19  rdf:type  :Status ;
-        :status   "+9 Laps" .
+        :status   "+9 tours"@fr , "+9 Laps"@en ;
+        :type     "lap" .
 
 :status_88  rdf:type  :Status ;
-        :status   "+10 Laps" .
+        :status   "+10 tours"@fr , "+10 Laps"@en ;
+        :type     "lap" .
 
 :status_119  rdf:type  :Status ;
-        :status   "+23 Laps" .
+        :status   "+23 tours"@fr , "+23 Laps"@en ;
+        :type     "lap" .
 
 :status_41  rdf:type  :Status ;
-        :status   "Broken wing" .
+        :status   "Aile brisée"@fr , "Broken wing"@en ;
+        :type     "out" .
 
 :status_100  rdf:type  :Status ;
-        :status   "Driver unwell" .
+        :status   "Malaise du conducteur"@fr , "Driver unwell"@en ;
+        :type     "out" .
 
 :status_13  rdf:type  :Status ;
-        :status   "+3 Laps" .
+        :status   "+3 tours"@fr , "+3 Laps"@en ;
+        :type     "lap" .
 
 :status_82  rdf:type  :Status ;
-        :status   "Injury" .
+        :status   "Blessure"@fr , "Injury"@en ;
+        :type     "out" .
 
 :status_141  rdf:type  :Status ;
-        :status   "Cooling system" .
+        :status   "Système de refroidissement"@fr , "Cooling system"@en ;
+        :type     "out" .
 
 :status_54  rdf:type  :Status ;
-        :status   "Withdrew" .
+        :status   "Retiré"@fr , "Withdrew"@en ;
+        :type     "out" .
 
 :status_113  rdf:type  :Status ;
-        :status   "+25 Laps" .
+        :status   "+25 tours"@fr , "+25 Laps"@en ;
+        :type     "lap" .
 
 :status_26  rdf:type  :Status ;
-        :status   "Mechanical" .
+        :status   "Mécanique"@fr , "Mechanical"@en ;
+        :type     "out" .
 
 :status_95  rdf:type  :Status ;
-        :status   "Fuel leak" .
+        :status   "Fuite de carburant"@fr , "Fuel leak"@en ;
+        :type     "out" .
 
 :status_67  rdf:type  :Status ;
-        :status   "Wheel bearing" .
+        :status   "Roulement des roues"@fr , "Wheel bearing"@en ;
+        :type     "out" .
 
 :status_126  rdf:type  :Status ;
-        :status   "Supercharger" .
+        :status   "Compresseur"@fr , "Supercharger"@en ;
+        :type     "out" .
 
 :status_39  rdf:type  :Status ;
-        :status   "Technical" .
+        :status   "Technique"@fr , "Technical"@en ;
+        :type     "out" .
 
 :status_139  rdf:type  :Status ;
-        :status   "Illness" .
+        :status   "Maladie"@fr , "Illness"@en ;
+        :type     "out" .
 
 :status_4  rdf:type  :Status ;
-        :status   "Collision" .
+        :status   "Collision"@fr , "Collision"@en ;
+        :type     "out" .
 
 :status_20  rdf:type  :Status ;
-        :status   "Spun off" .
+        :status   "Sortie de piste"@fr , "Spun off"@en ;
+        :type     "out" .
 
 :status_61  rdf:type  :Status ;
-        :status   "Wheel nut" .
+        :status   "Écrou de roue"@fr , "Wheel nut"@en ;
+        :type     "out" .
 
 :status_120  rdf:type  :Status ;
-        :status   "+21 Laps" .
+        :status   "+21 tours"@fr , "+21 Laps"@en ;
+        :type     "lap" .
 
 :status_33  rdf:type  :Status ;
-        :status   "Front wing" .
+        :status   "Aile avant"@fr , "Front wing"@en ;
+        :type     "out" .
 
 :status_74  rdf:type  :Status ;
-        :status   "Fuel" .
+        :status   "Carburant"@fr , "Fuel"@en ;
+        :type     "out" .
 
 :status_133  rdf:type  :Status ;
-        :status   "+49 Laps" .
+        :status   "+49 tours"@fr , "+49 Laps"@en ;
+        :type     "lap" .
 
 :status_46  rdf:type  :Status ;
-        :status   "Wheel rim" .
+        :status   "Jante"@fr , "Wheel rim"@en ;
+        :type     "out" .
 
 :status_105  rdf:type  :Status ;
-        :status   "Spark plugs" .
+        :status   "Bougies d'allumage"@fr , "Spark plugs"@en ;
+        :type     "out" .
 
 :status_18  rdf:type  :Status ;
-        :status   "+8 Laps" .
+        :status   "+8 tours"@fr , "+8 Laps"@en ;
+        :type     "lap" .
 
 :status_87  rdf:type  :Status ;
-        :status   "Crankshaft" .
+        :status   "Vilebrequin"@fr , "Crankshaft"@en ;
+        :type     "out" .
 
 :status_59  rdf:type  :Status ;
-        :status   "Tyre puncture" .
+        :status   "Crevaison"@fr , "Tyre puncture"@en ;
+        :type     "out" .
 
 :status_118  rdf:type  :Status ;
-        :status   "+29 Laps" .
+        :status   "+29 tours"@fr , "+29 Laps"@en ;
+        :type     "lap" .
 
 :status_40  rdf:type  :Status ;
-        :status   "Electronics" .
+        :status   "Electronique"@fr , "Electronics"@en ;
+        :type     "out" .
 
 :status_12  rdf:type  :Status ;
-        :status   "+2 Laps" .
+        :status   "+2 tours"@fr , "+2 Laps"@en ;
+        :type     "lap" .
 
 :status_9  rdf:type  :Status ;
-        :status   "Hydraulics" .
+        :status   "Hydraulique"@fr , "Hydraulics"@en ;
+        :type     "out" .
 
 :status_81  rdf:type  :Status ;
-        :status   "Did not qualify" .
+        :status   "Non qualifié"@fr , "Did not qualify"@en ;
+        :type     "out" .
 
 :status_140  rdf:type  :Status ;
-        :status   "Undertray" .
+        :status   "Dessous de caisse"@fr , "Undertray"@en ;
+        :type     "out" .
 
 :status_53  rdf:type  :Status ;
-        :status   "+13 Laps" .
+        :status   "+13 tours"@fr , "+13 Laps"@en ;
+        :type     "lap" .
 
 :status_112  rdf:type  :Status ;
-        :status   "+15 Laps" .
+        :status   "+15 tours"@fr , "+15 Laps"@en ;
+        :type     "lap" .
 
 :status_25  rdf:type  :Status ;
-        :status   "Overheating" .
+        :status   "Surchauffe"@fr , "Overheating"@en ;
+        :type     "out" .
 
 :status_94  rdf:type  :Status ;
-        :status   "Oil pump" .
+        :status   "Pompe à huile"@fr , "Oil pump"@en ;
+        :type     "out" .
 
 :status_66  rdf:type  :Status ;
-        :status   "Fire" .
+        :status   "Feu"@fr , "Fire"@en ;
+        :type     "out" .
 
 :status_125  rdf:type  :Status ;
-        :status   "+46 Laps" .
+        :status   "+46 tours"@fr , "+46 Laps"@en ;
+        :type     "lap" .
 
 :status_38  rdf:type  :Status ;
-        :status   "Steering" .
+        :status   "Direction"@fr , "Steering"@en ;
+        :type     "out" .
 
 :status_79  rdf:type  :Status ;
-        :status   "Drivetrain" .
+        :status   "Drivetrain"@fr , "Drivetrain"@en ;
+        :type     "out" .
 
 :status_138  rdf:type  :Status ;
-        :status   "Debris" .
+        :status   "Débris"@fr , "Debris"@en ;
+        :type     "out" .
 
 :status_3  rdf:type  :Status ;
-        :status   "Accident" .
+        :status   "Accident"@fr , "Accident"@en ;
+        :type     "out" .
 
 :status_60  rdf:type  :Status ;
-        :status   "Out of fuel" .
+        :status   "Panne d'essence"@fr , "Out of fuel"@en ;
+        :type     "out" .
 
 :status_32  rdf:type  :Status ;
-        :status   "Fuel pressure" .
+        :status   "Pression du carburant"@fr , "Fuel pressure"@en ;
+        :type     "out" .
 
 :status_73  rdf:type  :Status ;
-        :status   "Injured" .
+        :status   "Blessé"@fr , "Injured"@en ;
+        :type     "out" .
 
 :status_132  rdf:type  :Status ;
-        :status   "ERS" .
+        :status   "ERS"@fr , "ERS"@en ;
+        :type     "out" .
 
 :status_45  rdf:type  :Status ;
-        :status   "+11 Laps" .
+        :status   "+11 tours"@fr , "+11 Laps"@en ;
+        :type     "lap" .
 
 :status_104  rdf:type  :Status ;
-        :status   "Fatal accident" .
+        :status   "Accident mortel"@fr , "Fatal accident"@en ;
+        :type     "out" .
 
 :status_17  rdf:type  :Status ;
-        :status   "+7 Laps" .
+        :status   "+7 tours"@fr , "+7 Laps"@en ;
+        :type     "lap" .
 
 :status_86  rdf:type  :Status ;
-        :status   "Halfshaft" .
+        :status   "Demi-arbre"@fr , "Halfshaft"@en ;
+        :type     "out" .
 
 :status_58  rdf:type  :Status ;
-        :status   "+26 Laps" .
+        :status   "+26 tours"@fr , "+26 Laps"@en ;
+        :type     "lap" .
 
 :status_117  rdf:type  :Status ;
-        :status   "+24 Laps" .
+        :status   "+24 tours"@fr , "+24 Laps"@en ;
+        :type     "lap" .
 
 :status_99  rdf:type  :Status ;
-        :status   "Distributor" .
+        :status   "Distributeur"@fr , "Distributor"@en ;
+        :type     "out" .
 
 :status_11  rdf:type  :Status ;
-        :status   "+1 Lap" .
+        :status   "+1 tour"@fr , "+1 Lap"@en ;
+        :type     "lap" .
 
 :status_8  rdf:type  :Status ;
-        :status   "Clutch" .
+        :status   "Embrayage"@fr , "Clutch"@en ;
+        :type     "out" .
 
 :status_80  rdf:type  :Status ;
-        :status   "Ignition" .
+        :status   "Allumage"@fr , "Ignition"@en ;
+        :type     "out" .
 
 :status_111  rdf:type  :Status ;
-        :status   "+14 Laps" .
+        :status   "+14 tours"@fr , "+14 Laps"@en ;
+        :type     "lap" .
 
 :status_24  rdf:type  :Status ;
-        :status   "Differential" .
+        :status   "Différentiel"@fr , "Differential"@en ;
+        :type     "out" .
 
 :status_93  rdf:type  :Status ;
-        :status   "Safety belt" .
+        :status   "Ceinture de sécurité"@fr , "Safety belt"@en ;
+        :type     "out" .
 
 :status_65  rdf:type  :Status ;
-        :status   "Rear wing" .
+        :status   "Aile arrière"@fr , "Rear wing"@en ;
+        :type     "out" .
 
 :status_124  rdf:type  :Status ;
-        :status   "+19 Laps" .
+        :status   "+19 tours"@fr , "+19 Laps"@en ;
+        :type     "lap" .
 
 :status_37  rdf:type  :Status ;
-        :status   "Throttle" .
+        :status   "Accélérateur"@fr , "Throttle"@en ;
+        :type     "out" .
 
 :status_78  rdf:type  :Status ;
-        :status   "Safety" .
+        :status   "Sécurité"@fr , "Safety"@en ;
+        :type     "out" .
 
 :status_137  rdf:type  :Status ;
-        :status   "Damage" .
+        :status   "Dégâts"@fr , "Damage"@en ;
+        :type     "out" .
 
 :status_2  rdf:type  :Status ;
-        :status   "Disqualified" .
+        :status   "Disqualifié"@fr , "Disqualified"@en ;
+        :type     "out" .
 
 :status_109  rdf:type  :Status ;
-        :status   "Axle" .
+        :status   "Essieu"@fr , "Axle"@en ;
+        :type     "out" .
 
 :status_31  rdf:type  :Status ;
-        :status   "Retired" .
+        :status   "Retiré"@fr , "Retired"@en ;
+        :type     "out" .
 
 :status_72  rdf:type  :Status ;
-        :status   "Launch control" .
+        :status   "Commande de lancement"@fr , "Launch control"@en ;
+        :type     "out" .
 
 :status_131  rdf:type  :Status ;
-        :status   "Power Unit" .
+        :status   "Unité de puissance"@fr , "Power Unit"@en ;
+        :type     "out" .
 
 :status_44  rdf:type  :Status ;
-        :status   "Oil leak" .
+        :status   "Fuite d'huile"@fr , "Oil leak"@en ;
+        :type     "out" .
 
 :status_103  rdf:type  :Status ;
-        :status   "Water pump" .
+        :status   "Pompe à eau"@fr , "Water pump"@en ;
+        :type     "out" .
 
 :status_16  rdf:type  :Status ;
-        :status   "+6 Laps" .
+        :status   "+6 tours"@fr , "+6 Laps"@en ;
+        :type     "lap" .
 
 :status_85  rdf:type  :Status ;
-        :status   "Stalled" .
+        :status   "A calé"@fr , "Stalled"@en ;
+        :type     "out" .
 
 :status_116  rdf:type  :Status ;
-        :status   "+16 Laps" .
+        :status   "+16 tours"@fr , "+16 Laps"@en ;
+        :type     "lap" .
 
 :status_29  rdf:type  :Status ;
-        :status   "Puncture" .
+        :status   "Crevaison"@fr , "Puncture"@en ;
+        :type     "out" .
 
 :status_98  rdf:type  :Status ;
-        :status   "Injection" .
+        :status   "Injection"@fr , "Injection"@en ;
+        :type     "out" .
 
 :status_129  rdf:type  :Status ;
-        :status   "Engine misfire" .
+        :status   "Défaut moteur"@fr , "Engine misfire"@en ;
+        :type     "out" .
 
 :status_10  rdf:type  :Status ;
-        :status   "Electrical" .
+        :status   "Électricité"@fr , "Electrical"@en ;
+        :type     "out" .
 
 :status_7  rdf:type  :Status ;
-        :status   "Transmission" .
+        :status   "Transmission"@fr , "Transmission"@en ;
+        :type     "out" .
 
 :status_51  rdf:type  :Status ;
-        :status   "Oil pressure" .
+        :status   "Pression d'huile"@fr , "Oil pressure"@en ;
+        :type     "out" .
 
 :status_110  rdf:type  :Status ;
-        :status   "Water pipe" .
+        :status   "Conduite d'eau"@fr , "Water pipe"@en ;
+        :type     "out" .
 
 :status_23  rdf:type  :Status ;
-        :status   "Brakes" .
+        :status   "Freins"@fr , "Brakes"@en ;
+        :type     "out" .
 
 :status_92  rdf:type  :Status ;
-        :status   "Underweight" .
+        :status   "Poids insuffisant"@fr , "Underweight"@en ;
+        :type     "out" .
 
 :status_64  rdf:type  :Status ;
-        :status   "Handling" .
+        :status   "Manipulation"@fr , "Handling"@en ;
+        :type     "out" .
 
 :status_123  rdf:type  :Status ;
-        :status   "+30 Laps" .
+        :status   "+30 tours"@fr , "+30 Laps"@en ;
+        :type     "lap" .
 
 :status_36  rdf:type  :Status ;
-        :status   "Wheel" .
+        :status   "Roue"@fr , "Wheel"@en ;
+        :type     "out" .
 
 :status_136  rdf:type  :Status ;
-        :status   "Seat" .
+        :status   "Siège"@fr , "Seat"@en ;
+        :type     "out" .
 
 :status_77  rdf:type  :Status ;
-        :status   "107% Rule" .
+        :status   "Règle des 107%"@fr , "107% Rule"@en ;
+        :type     "out" .

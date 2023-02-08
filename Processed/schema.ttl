@@ -118,7 +118,9 @@
 :status rdfs:domain :Status .
 :status rdfs:range xsd:string .
 
-
+:type a rdf:Property .
+:type rdfs:domain :Status .
+:type rdfs:range xsd:string .
 
 
 

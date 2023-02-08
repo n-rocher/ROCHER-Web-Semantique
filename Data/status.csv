@@ -1,140 +1,140 @@
-statusId,status
-1,"Finished"
-2,"Disqualified"
-3,"Accident"
-4,"Collision"
-5,"Engine"
-6,"Gearbox"
-7,"Transmission"
-8,"Clutch"
-9,"Hydraulics"
-10,"Electrical"
-11,"+1 Lap"
-12,"+2 Laps"
-13,"+3 Laps"
-14,"+4 Laps"
-15,"+5 Laps"
-16,"+6 Laps"
-17,"+7 Laps"
-18,"+8 Laps"
-19,"+9 Laps"
-20,"Spun off"
-21,"Radiator"
-22,"Suspension"
-23,"Brakes"
-24,"Differential"
-25,"Overheating"
-26,"Mechanical"
-27,"Tyre"
-28,"Driver Seat"
-29,"Puncture"
-30,"Driveshaft"
-31,"Retired"
-32,"Fuel pressure"
-33,"Front wing"
-34,"Water pressure"
-35,"Refuelling"
-36,"Wheel"
-37,"Throttle"
-38,"Steering"
-39,"Technical"
-40,"Electronics"
-41,"Broken wing"
-42,"Heat shield fire"
-43,"Exhaust"
-44,"Oil leak"
-45,"+11 Laps"
-46,"Wheel rim"
-47,"Water leak"
-48,"Fuel pump"
-49,"Track rod"
-50,"+17 Laps"
-51,"Oil pressure"
-128,"+42 Laps"
-53,"+13 Laps"
-54,"Withdrew"
-55,"+12 Laps"
-56,"Engine fire"
-129,"Engine misfire"
-58,"+26 Laps"
-59,"Tyre puncture"
-60,"Out of fuel"
-61,"Wheel nut"
-62,"Not classified"
-63,"Pneumatics"
-64,"Handling"
-65,"Rear wing"
-66,"Fire"
-67,"Wheel bearing"
-68,"Physical"
-69,"Fuel system"
-70,"Oil line"
-71,"Fuel rig"
-72,"Launch control"
-73,"Injured"
-74,"Fuel"
-75,"Power loss"
-76,"Vibrations"
-77,"107% Rule"
-78,"Safety"
-79,"Drivetrain"
-80,"Ignition"
-81,"Did not qualify"
-82,"Injury"
-83,"Chassis"
-84,"Battery"
-85,"Stalled"
-86,"Halfshaft"
-87,"Crankshaft"
-88,"+10 Laps"
-89,"Safety concerns"
-90,"Not restarted"
-91,"Alternator"
-92,"Underweight"
-93,"Safety belt"
-94,"Oil pump"
-95,"Fuel leak"
-96,"Excluded"
-97,"Did not prequalify"
-98,"Injection"
-99,"Distributor"
-100,"Driver unwell"
-101,"Turbo"
-102,"CV joint"
-103,"Water pump"
-104,"Fatal accident"
-105,"Spark plugs"
-106,"Fuel pipe"
-107,"Eye injury"
-108,"Oil pipe"
-109,"Axle"
-110,"Water pipe"
-111,"+14 Laps"
-112,"+15 Laps"
-113,"+25 Laps"
-114,"+18 Laps"
-115,"+22 Laps"
-116,"+16 Laps"
-117,"+24 Laps"
-118,"+29 Laps"
-119,"+23 Laps"
-120,"+21 Laps"
-121,"Magneto"
-122,"+44 Laps"
-123,"+30 Laps"
-124,"+19 Laps"
-125,"+46 Laps"
-126,"Supercharger"
-127,"+20 Laps"
-130,"Collision damage"
-131,"Power Unit"
-132,"ERS"
-133,"+49 Laps"
-134,"+38 Laps"
-135,"Brake duct"
-136,"Seat"
-137,"Damage"
-138,"Debris"
-139,"Illness"
-140,"Undertray"
-141,"Cooling system"
+statusId,status@en,status@fr,type
+1,Finished,Terminé,ok
+2,Disqualified,Disqualifié,out
+3,Accident,Accident,out
+4,Collision,Collision,out
+5,Engine,Moteur,out
+6,Gearbox,Boîte de vitesses,out
+7,Transmission,Transmission,out
+8,Clutch,Embrayage,out
+9,Hydraulics,Hydraulique,out
+10,Electrical,Électricité,out
+11,+1 Lap,+1 tour,lap
+12,+2 Laps,+2 tours,lap
+13,+3 Laps,+3 tours,lap
+14,+4 Laps,+4 tours,lap
+15,+5 Laps,+5 tours,lap
+16,+6 Laps,+6 tours,lap
+17,+7 Laps,+7 tours,lap
+18,+8 Laps,+8 tours,lap
+19,+9 Laps,+9 tours,lap
+20,Spun off,Sortie de piste,out
+21,Radiator,Radiateur,out
+22,Suspension,Suspension,out
+23,Brakes,Freins,out
+24,Differential,Différentiel,out
+25,Overheating,Surchauffe,out
+26,Mechanical,Mécanique,out
+27,Tyre,Pneu,out
+28,Driver Seat,Siège du conducteur,out
+29,Puncture,Crevaison,out
+30,Driveshaft,Arbre de transmission,out
+31,Retired,Retiré,out
+32,Fuel pressure,Pression du carburant,out
+33,Front wing,Aile avant,out
+34,Water pressure,Pression d'eau,out
+35,Refuelling,Ravitaillement en carburant,out
+36,Wheel,Roue,out
+37,Throttle,Accélérateur,out
+38,Steering,Direction,out
+39,Technical,Technique,out
+40,Electronics,Electronique,out
+41,Broken wing,Aile brisée,out
+42,Heat shield fire,Bouclier thermique,out
+43,Exhaust,Échappement,out
+44,Oil leak,Fuite d'huile,out
+45,+11 Laps,+11 tours,lap
+46,Wheel rim,Jante,out
+47,Water leak,Fuite d'eau,out
+48,Fuel pump,Pompe à essence,out
+49,Track rod,Biellette de piste,out
+50,+17 Laps,+17 tours,lap
+51,Oil pressure,Pression d'huile,out
+128,+42 Laps,+42 tours,lap
+53,+13 Laps,+13 tours,lap
+54,Withdrew,Retiré,out
+55,+12 Laps,+12 tours,lap
+56,Engine fire,Feu moteur,out
+129,Engine misfire,Défaut moteur,out
+58,+26 Laps,+26 tours,lap
+59,Tyre puncture,Crevaison,out
+60,Out of fuel,Panne d'essence,out
+61,Wheel nut,Écrou de roue,out
+62,Not classified,Non classé,out
+63,Pneumatics,Pneumatique,out
+64,Handling,Manipulation,out
+65,Rear wing,Aile arrière,out
+66,Fire,Feu,out
+67,Wheel bearing,Roulement des roues,out
+68,Physical,Physique,out
+69,Fuel system,Circuit de carburant,out
+70,Oil line,Ligne d'huile,out
+71,Fuel rig,Dispositif d'alimentation en carburant,out
+72,Launch control,Commande de lancement,out
+73,Injured,Blessé,out
+74,Fuel,Carburant,out
+75,Power loss,Perte de puissance,out
+76,Vibrations,Vibrations,out
+77,107% Rule,Règle des 107%,out
+78,Safety,Sécurité,out
+79,Drivetrain,Drivetrain,out
+80,Ignition,Allumage,out
+81,Did not qualify,Non qualifié,out
+82,Injury,Blessure,out
+83,Chassis,Châssis,out
+84,Battery,Batterie,out
+85,Stalled,A calé,out
+86,Halfshaft,Demi-arbre,out
+87,Crankshaft,Vilebrequin,out
+88,+10 Laps,+10 tours,lap
+89,Safety concerns,Problèmes de sécurité,out
+90,Not restarted,Pas de redémarrage,out
+91,Alternator,Alternateur,out
+92,Underweight,Poids insuffisant,out
+93,Safety belt,Ceinture de sécurité,out
+94,Oil pump,Pompe à huile,out
+95,Fuel leak,Fuite de carburant,out
+96,Excluded,Exclu,out
+97,Did not prequalify,N'a pas été préqualifié,out
+98,Injection,Injection,out
+99,Distributor,Distributeur,out
+100,Driver unwell,Malaise du conducteur,out
+101,Turbo,Turbo,out
+102,CV joint,Joint CV,out
+103,Water pump,Pompe à eau,out
+104,Fatal accident,Accident mortel,out
+105,Spark plugs,Bougies d'allumage,out
+106,Fuel pipe,Tuyau de carburant,out
+107,Eye injury,Blessure aux yeux,out
+108,Oil pipe,Tuyau d'huile,out
+109,Axle,Essieu,out
+110,Water pipe,Conduite d'eau,out
+111,+14 Laps,+14 tours,lap
+112,+15 Laps,+15 tours,lap
+113,+25 Laps,+25 tours,lap
+114,+18 Laps,+18 tours,lap
+115,+22 Laps,+22 tours,lap
+116,+16 Laps,+16 tours,lap
+117,+24 Laps,+24 tours,lap
+118,+29 Laps,+29 tours,lap
+119,+23 Laps,+23 tours,lap
+120,+21 Laps,+21 tours,lap
+121,Magneto,Magnéto,out
+122,+44 Laps,+44 tours,lap
+123,+30 Laps,+30 tours,lap
+124,+19 Laps,+19 tours,lap
+125,+46 Laps,+46 tours,lap
+126,Supercharger,Compresseur,out
+127,+20 Laps,+20 tours,lap
+130,Collision damage,Dommages par collision,out
+131,Power Unit,Unité de puissance,out
+132,ERS,ERS,out
+133,+49 Laps,+49 tours,lap
+134,+38 Laps,+38 tours,lap
+135,Brake duct,Conduit de freinage,out
+136,Seat,Siège,out
+137,Damage,Dégâts,out
+138,Debris,Débris,out
+139,Illness,Maladie,out
+140,Undertray,Dessous de caisse,out
+141,Cooling system,Système de refroidissement,out

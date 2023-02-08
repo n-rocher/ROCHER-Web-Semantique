@@ -1,4 +1,6 @@
 import { useRouteError } from "react-router-dom";
+import { EuiCallOut, EuiLink } from '@elastic/eui';
+
 
 export default function ErrorPage() {
   const error = useRouteError();
@@ -6,12 +8,14 @@ export default function ErrorPage() {
 
   return (
     <div id="error-page">
-      <h1>Oops!</h1>
-      <p>Désolé, une erreur est arrivée.</p>
-      <p>
-        <i>{error.statusText || error.message}</i>
-      </p>
-      <a href={`/`}>Retourner à l'accueil</a>
+
+      <EuiCallOut title="Désolé, une erreur est survenue" color="danger" iconType="alert">
+        <p>
+          Nous n'avons pas de solution sur le moment, cependant vous pouvez{' '}
+          <EuiLink href="/">retourner sur l'accueil</EuiLink>.
+        </p>
+      </EuiCallOut>
+
     </div>
   );
 }
