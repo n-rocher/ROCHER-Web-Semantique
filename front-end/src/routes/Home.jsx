@@ -79,13 +79,13 @@ export default class Home extends React.Component {
             }
         },
         {
-            field: 'dateTime',
+            field: 'date',
             name: 'Date',
             align: "right",
             textOnly: true,
             truncateText: true,
             width: "200px",
-            render: (dateTime) => formatDate(dateTime.value, 'dobLong'),
+            render: (date) => formatDate(date.value, 'dobLong'),
         },
     ]
 

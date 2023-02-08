@@ -20,10 +20,6 @@
 :grid rdfs:domain :Result .
 :grid rdfs:range xsd:int .
 
-:positionText a rdf:Property .
-:positionText rdfs:domain :Result .
-:positionText rdfs:range xsd:string .
-
 :positionOrder a rdf:Property .
 :positionOrder rdfs:domain :Result .
 :positionOrder rdfs:range xsd:int .
@@ -36,13 +32,9 @@
 :laps rdfs:domain :Result .
 :laps rdfs:range xsd:int .
 
-:time a rdf:Property .
-:time rdfs:domain :Result .
-:time rdfs:range xsd:string .
-
 :milliseconds a rdf:Property .
 :milliseconds rdfs:domain :Result .
-:milliseconds rdfs:range xsd:string .
+:milliseconds rdfs:range xsd:int .
 
 :fastestLap a rdf:Property .
 :fastestLap rdfs:domain :Result .

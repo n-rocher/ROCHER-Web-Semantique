@@ -28,7 +28,7 @@ export async function getAllGrandPrix() {
         PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         SELECT * WHERE {
             ?uri a dbo:GrandPrix ;
-            :dateTime [ a :DateTime ; :date ?dateTime ] ;
+            :dateTime [ a :DateTime ; :date ?date ] ;
             :year ?year ;
             :name ?name  .
             OPTIONAL {
@@ -49,21 +49,52 @@ export async function getGrandPrix(grandprix_iri) {
         PREFIX : <http://127.0.0.1:3333/>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+        
         SELECT * WHERE {
-            ?uri a dbo:GrandPrix ;
-            :dateTime [ a :DateTime ; :date ?dateTime ] ;
-            :year ?year ;
-            :name ?name  .
-            OPTIONAL {
-                ?race_uri :race ?uri;
-                        :positionOrder "1"^^xsd:int;
-                        :driver ?winner_uri.
-                ?winner_uri :name [ :forename ?winner_forename; :surname ?winner_surname ] .
-            }
-        } ORDER BY DESC(?dateTime) LIMIT 50
+                :${grandprix_iri} a dbo:GrandPrix ;
+                :name ?name;
+                :year ?year;
+                :circuit ?circuit_uri;
+                :wikipedia ?wikipedia_url ;
+                :dateTime [ :date ?gp_date; :time ?gp_time; ] .
+            
+                OPTIONAL  { :${grandprix_iri} :fp1 [  :date ?fp1_date; :time ?fp1_time; ] }
+                OPTIONAL  { :${grandprix_iri} :fp2 [  :date ?fp2_date; :time ?fp2_time; ] }
+                OPTIONAL  { :${grandprix_iri} :fp3 [  :date ?fp3_date; :time ?fp3_time; ] }
+                OPTIONAL  { :${grandprix_iri} :qualification [:date ?qualification_date; :time ?qualification_time; ] }
+                OPTIONAL  { :${grandprix_iri} :sprint [ :date ?sprint_date; :time ?sprint_time; ] }
+        }
     `
     return requestSPARQL(query)
 }
+
+export async function getResults(grandprix_iri) {
+    const query = `
+        PREFIX dbo: <http://dbpedia.org/ontology/>
+        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+        PREFIX : <http://127.0.0.1:3333/>
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+        
+        SELECT * WHERE {
+                :${grandprix_iri} a dbo:GrandPrix ;
+                :name ?name;
+                :year ?year;
+                :circuit ?circuit_uri;
+                :wikipedia ?wikipedia_url ;
+                :dateTime [ :date ?gp_date; :time ?gp_time; ] .
+            
+                OPTIONAL  { :${grandprix_iri} :fp1 [  :date ?fp1_date; :time ?fp1_time; ] }
+                OPTIONAL  { :${grandprix_iri} :fp2 [  :date ?fp2_date; :time ?fp2_time; ] }
+                OPTIONAL  { :${grandprix_iri} :fp3 [  :date ?fp3_date; :time ?fp3_time; ] }
+                OPTIONAL  { :${grandprix_iri} :qualification [:date ?qualification_date; :time ?qualification_time; ] }
+                OPTIONAL  { :${grandprix_iri} :sprint [ :date ?sprint_date; :time ?sprint_time; ] }
+        }
+    `
+    return requestSPARQL(query)
+}
+
+
 
 
 export async function getNumberOfGrandPrixByYear() {
@@ -109,17 +140,17 @@ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX : <http://127.0.0.1:3333/>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT *  WHERE {
-  		?uri a dbo:GrandPrix ;
+            ?uri a dbo:GrandPrix ;
           :name ?name;
           :year ?year;
           :circuit ?circuit.
-        	OPTIONAL {
-    		 ?circuit :name ?circuit_name.
+            OPTIONAL {
+             ?circuit :name ?circuit_name.
              ?circuit :country ?country.
               OPTIONAL {
                 SERVICE <http://dbpedia.org/sparql> {
                   ?country rdfs:label ?country_name ;
-        			FILTER(lang(?country_name) ="fr").
+                    FILTER(lang(?country_name) ="fr").
                 }
               }
             }

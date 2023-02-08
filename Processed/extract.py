@@ -1,6 +1,6 @@
 import re  
 import json
-with open("races.json", "r") as ff:
+with open("results.json", "r") as ff:
 
     file_content = json.load(ff)
 
