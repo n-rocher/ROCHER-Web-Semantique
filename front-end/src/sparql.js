@@ -50,13 +50,14 @@ export async function getGrandPrix(grandprix_iri) {
         PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
         PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 
         SELECT * WHERE {
             :${grandprix_iri} a dbo:GrandPrix .
             OPTIONAL  {:${grandprix_iri} :name ?name }
             OPTIONAL  {:${grandprix_iri} :year ?year}
             OPTIONAL  {:${grandprix_iri} :circuit ?circuit_uri}
-            OPTIONAL  {:${grandprix_iri} :wikipedia ?wikipedia_url }
+            OPTIONAL  {:${grandprix_iri} :wikipedia ?wikipedia_gp_iri }
             OPTIONAL  {:${grandprix_iri} :dateTime [ :date ?gp_date; :time ?gp_time; ] }
 
             OPTIONAL  { ?circuit_uri a :Circuit;
@@ -65,7 +66,7 @@ export async function getGrandPrix(grandprix_iri) {
                 :country ?circuit_country ;
                 :lat ?circuit_lat ;
                 :lng ?circuit_lng ;
-                :wikipedia ?circuit_wikipedia .
+                :wikipedia ?wikipedia_circuit_iri .
             }
             
             OPTIONAL  { :${grandprix_iri} :fp1 [  :date ?fp1_date; :time ?fp1_time; ] }
@@ -73,8 +74,21 @@ export async function getGrandPrix(grandprix_iri) {
             OPTIONAL  { :${grandprix_iri} :fp3 [  :date ?fp3_date; :time ?fp3_time; ] }
             OPTIONAL  { :${grandprix_iri} :qualification [:date ?qualification_date; :time ?qualification_time; ] }
             OPTIONAL  { :${grandprix_iri} :sprint [ :date ?sprint_date; :time ?sprint_time; ] }
+     
+            OPTIONAL{
+                SERVICE <http://dbpedia.org/sparql> {
+                  ?wikipedia_circuit_iri  foaf:primaryTopic ?circuit_page_dbo .
+                  OPTIONAL{ ?circuit_page_dbo dbo:abstract ?circuit_abstract. FILTER(LANG(?circuit_abstract) = "fr") }
+                  OPTIONAL{ ?circuit_page_dbo dbo:thumbnail ?circuit_thumbnail. }
+                  ?wikipedia_gp_iri  foaf:primaryTopic ?gp_page_dbo .
+                  OPTIONAL{ ?gp_page_dbo dbo:abstract ?gp_abstract. FILTER(LANG(?gp_abstract) = "fr") }
+                }
+            }
+              
         }
     `
+
+    console.log(query)
     return requestSPARQL(query)
 }
 
@@ -121,8 +135,6 @@ export async function getResults(grandprix_iri) {
     `
     return requestSPARQL(query)
 }
-
-
 
 
 export async function getNumberOfGrandPrixByYear() {
@@ -206,6 +218,58 @@ export async function getDriverResults(driver_iri) {
     `
     return requestSPARQL(query)
 }
+
+export async function getDriverPointsByYear(driver_iri) {
+    const query = `
+        PREFIX : <http://127.0.0.1:3333/>
+        PREFIX dbo: <http://dbpedia.org/ontology/>
+        PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        
+        SELECT ?gp_year ?status_type (count(?status_type) as ?count) (sum(?pt) as ?points)
+        WHERE {
+        ?result_uri a :Result ;
+        :driver :${driver_iri};
+        :race ?gp_uri ;
+        :points ?pt ;
+        :status ?status_uri .
+        
+        ?gp_uri a dbo:GrandPrix ;
+        :year ?gp_year .
+        
+        ?status_uri a :Status ;
+            :type ?status_type.
+        
+        } GROUP BY ?status_type ?gp_year ORDER BY ?gp_year
+    `
+    return requestSPARQL(query)
+}
+
+export async function getNumberOfGPByCircuit() {
+    const query = `
+        PREFIX db: <http://dbpedia.org/>
+        PREFIX : <http://127.0.0.1:3333/>
+        PREFIX dbo: <http://dbpedia.org/ontology/>
+        PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+        PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+
+        SELECT ?gp_name (COUNT(*) as ?nbr_gp)  (SAMPLE(?_latitude) as ?latitude) (SAMPLE(?_longitude) as ?longitude)
+        WHERE {
+        ?gp_uri a dbo:GrandPrix ; 
+            :name ?gp_name ;
+            :circuit ?circuit_uri ;
+            :year ?gp_year .
+        ?circuit_uri a :Circuit ;
+            :lat ?_latitude ;
+            :lng ?_longitude .
+        
+        } GROUP BY ?gp_name
+        `
+    return requestSPARQL(query)
+}
+
 
 export async function getConstructor() {
     return []

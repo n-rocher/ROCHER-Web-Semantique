@@ -10,9 +10,12 @@ import {
 	EuiIcon,
 	EuiBasicTable,
 	EuiPanel,
-	EuiHorizontalRule,
+	EuiImage,
+	EuiText,
 	EuiStat, EuiFlexItem, EuiFlexGroup,
 	formatDate,
+	EuiCollapsibleNavGroup,
+	EuiCode,
 } from '@elastic/eui';
 
 import { getIRI } from "../util";
@@ -45,7 +48,7 @@ const RESULTS_COLUMNS = [
 		render: (_, data) => <EuiLink href={"/constructor/" + getIRI(data?.constructor_uri?.value)} target="_blank">
 			{data?.constructor?.value}
 		</EuiLink>
-	},{
+	}, {
 		field: 'grid',
 		name: 'Positions',
 		align: "center",
@@ -75,7 +78,6 @@ const RESULTS_COLUMNS = [
 export default function GrandPrix() {
 
 	let [grandPrix, resultats] = useLoaderData()
-	console.log(grandPrix)
 	grandPrix = grandPrix[0]
 
 	const timeline = [["fp1_date", "FP1"], ["fp2_date", "FP2"], ["fp3_date", "FP3"], ["sprint_date", "Sprint"], ["qualification_date", "Qualification"], ["gp_date", "Course"]]
@@ -88,13 +90,7 @@ export default function GrandPrix() {
 			</EuiTitle>
 		</EuiFlexGroup>
 
-		<EuiFlexGroup justifyContent="spaceAround">
-			<div style={{ width: 250 }}>
-				<EuiHorizontalRule margin="l" />
-			</div>
-		</EuiFlexGroup>
-
-		<EuiFlexGroup>
+		<EuiFlexGroup style={{ marginTop: 25 }}>
 			{
 				timeline.map(type => {
 					if (type[0] in grandPrix) {
@@ -113,6 +109,45 @@ export default function GrandPrix() {
 				})
 			}
 		</EuiFlexGroup>
+
+		{grandPrix?.gp_abstract?.value && <>
+			<EuiPanel paddingSize="xxs" hasBorder style={{ marginTop: 25 }}>
+				<EuiCollapsibleNavGroup
+					title="Description du Grand Prix"
+					isCollapsible={true}
+					initialIsOpen={grandPrix?.gp_abstract?.value.length < 400}
+				>
+					<EuiText grow={true} style={{ margin: "0px 15px 15px 15px", textAlign: "justify" }}>
+						<small>
+							{grandPrix?.gp_abstract?.value}
+						</small>
+					</EuiText>
+				</EuiCollapsibleNavGroup>
+			</EuiPanel>
+		</>}
+
+		{grandPrix?.circuit_abstract?.value &&
+			<EuiPanel paddingSize="xxs" hasBorder style={{ marginTop: 25 }}>
+				<EuiCollapsibleNavGroup
+					title={"Découvrir le circuit de " + grandPrix?.circuit_name?.value}
+					isCollapsible={true}
+					initialIsOpen={false}>
+
+					<EuiFlexGroup alignItems="center" style={{ margin: "0px 15px 15px 15px" }}>
+
+						{grandPrix?.circuit_thumbnail?.value &&
+							<EuiImage size="m" src={grandPrix.circuit_thumbnail.value} />
+						}
+
+						<EuiText grow={true} style={{ marginLeft: 15, textAlign: "justify" }}>
+							<small>
+								{grandPrix?.circuit_abstract?.value}
+							</small>
+						</EuiText>
+					</EuiFlexGroup>
+				</EuiCollapsibleNavGroup>
+			</EuiPanel>
+		}
 
 		<EuiTitle style={{ marginTop: 25, marginBottom: 10 }} size="xs"><h4>Résultat de course</h4></EuiTitle>
 

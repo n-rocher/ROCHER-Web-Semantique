@@ -36,7 +36,7 @@ const router = createBrowserRouter([
 		element: <Driver />,
 		errorElement: <ErrorPage />,
 		loader: async ({ params }) => {
-			return Promise.all([SPARQL.getDriver(params.driver_IRI), SPARQL.getDriverResults(params.driver_IRI)])
+			return Promise.all([SPARQL.getDriver(params.driver_IRI), SPARQL.getDriverResults(params.driver_IRI), SPARQL.getDriverPointsByYear(params.driver_IRI)])
 		},
 	}, {
 		path: "/constructor/:constructor_IRI",

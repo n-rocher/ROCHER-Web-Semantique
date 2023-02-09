@@ -1,6 +1,10 @@
 import React from "react";
 
-import { EuiPageTemplate } from '@elastic/eui';
+import {
+    EuiPageTemplate,
+    EuiFlexGroup,
+    EuiButton
+} from '@elastic/eui';
 
 export default function Root({
     panelled,
@@ -20,8 +24,11 @@ export default function Root({
 
             <EuiPageTemplate.Header
                 bottomBorder={true}
-                pageTitle='Formula 1 data'
+                pageTitle='Formula 1'
                 description='Accédez aux dernières données des grand prix de Formule 1 !'
+                rightSideItems={[
+                    <EuiButton href="/">Liste des grand prix</EuiButton>,
+                ]}
             />
 
             <EuiPageTemplate.Section

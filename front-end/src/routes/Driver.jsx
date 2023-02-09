@@ -13,18 +13,30 @@ import {
     EuiText,
     EuiHorizontalRule,
     EuiImage, EuiFlexItem, EuiFlexGroup,
-    formatDate,
+    euiPaletteForStatus,
 } from '@elastic/eui';
+
+import '@elastic/charts/dist/theme_only_light.css';
+
+import {
+    Chart,
+    Settings,
+    Axis,
+    LineSeries,
+    BarSeries,
+} from '@elastic/charts';
 
 import { getIRI } from "../util";
 
 const BADGE_COLORS = ["#FCF7BC", "#FEA27F", "#BADA55", "#FFA500", "#0000FF"]
 const CHART_COLOR = "#FF1801"
 const STATUS_COLOR = {
+    "out": "#ff7070",
     "ok": "#BADA55",
-    "lap": "primary",
-    "out": "#ff7070"
+    "lap": "#5757ff",
 }
+
+const ARRAY_STATUS_COLOR = Object.values(STATUS_COLOR)
 
 const RESULTS_COLUMNS = [
     {
@@ -76,8 +88,33 @@ const RESULTS_COLUMNS = [
 
 export default function GrandPrix() {
 
-    let [driver, grandPrixResults] = useLoaderData()
-    driver = driver[0]
+    let [driver, grandPrixResults, pointsData] = useLoaderData()
+
+    // Return le plus long abstract disponible en francais
+    if (driver.length > 1) {
+        let abs_length = driver.map(x => x?.abstract?.value?.length || 0)
+        driver = driver[abs_length.indexOf(Math.max(...abs_length))]
+    } else {
+        driver = driver[0]
+    }
+
+    const status_list = pointsData.map(x => {
+        return { x: x.gp_year.value, y: parseInt(x.count.value), g: x.status_type.value }
+    }).sort((x, y) => {
+        if (x.g < y.g) {
+            return 1;
+        }
+        if (x.g > y.g) {
+            return -1;
+        }
+        return 0;
+    })
+
+    const points_list = Object.entries(pointsData.reduce((pV, x) => {
+        if (!(x.gp_year.value in pV)) pV[x.gp_year.value] = 0
+        pV[x.gp_year.value] += parseFloat(x.points.value)
+        return pV
+    }, {}))
 
     return <>
 
@@ -87,7 +124,6 @@ export default function GrandPrix() {
                     <EuiImage size="m" src={driver.thumbnail.value} />
                 }
                 <div>
-
                     <EuiTitle size="l">
                         <h1>{driver?.forename?.value} {driver?.surname.value}</h1>
                     </EuiTitle>
@@ -98,6 +134,73 @@ export default function GrandPrix() {
                     </EuiText>
                 </div>
 
+            </EuiFlexGroup>
+        </EuiPanel>
+
+        <EuiPanel paddingSize="m" hasBorder style={{ marginTop: 25 }}>
+            <EuiFlexGroup>
+                <EuiFlexItem>
+                    <EuiTitle size="xs">
+                        <h5>Nombre de point gagné par année</h5>
+                    </EuiTitle>
+                    <Chart size={{ height: 350 }}>
+                        <Settings showLegend={false} />
+                        <LineSeries
+                            id="control"
+                            name="Control"
+                            data={points_list}
+                            xAccessor={0}
+                            yAccessors={[1]}
+                            color={['black']}
+                        />
+                        <Axis
+                            id="bottom-axis"
+                            position="bottom"
+
+                        />
+                        <Axis
+                            id="left-axis"
+                            position="left"
+                            showGridLines
+                            tickFormat={(d) => Number(d).toFixed(2)}
+                        />
+                    </Chart>
+                </EuiFlexItem>
+                <EuiFlexItem>
+                    <EuiTitle size="xs">
+                        <h5>Status de fin de grand prix</h5>
+                    </EuiTitle>
+                    <Chart size={{ height: 350 }}>
+                        <Settings
+                            theme={[
+                                { colors: { vizColors: ARRAY_STATUS_COLOR } },
+                            ]}
+                            showLegend={true}
+                            legendPosition="right"
+                            showLegendDisplayValue={false}
+                        />
+                        <BarSeries
+                            id="bars"
+                            name="0"
+                            data={status_list}
+                            xAccessor={'x'}
+                            yAccessors={['y']}
+                            splitSeriesAccessors={['g']}
+                            stackAccessors={['g']}
+                        />
+                        <Axis
+                            id="bottom-axis"
+                            position="bottom"
+
+                        />
+                        <Axis
+                            id="left-axis"
+                            position="left"
+                            showGridLines
+                            tickFormat={(d) => Number(d).toFixed(2)}
+                        />
+                    </Chart>
+                </EuiFlexItem>
             </EuiFlexGroup>
         </EuiPanel>
 
