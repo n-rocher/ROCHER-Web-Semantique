@@ -95,7 +95,7 @@ export default function GrandPrix() {
 				timeline.map(type => {
 					if (type[0] in grandPrix) {
 						let time = grandPrix[type[0].split("_")[0] + "_time"]?.value
-						return grandPrix[type[0]] && <EuiFlexItem>
+						return grandPrix[type[0]] && <EuiFlexItem key={type[0]}>
 							<EuiPanel paddingSize="s" hasBorder>
 								<EuiStat
 									title={<p>{formatDate(grandPrix[type[0]]?.value, "shortDate")}{time && <><br /><h6>{time}</h6></>}</p>}

@@ -52,7 +52,32 @@ export async function getGrandPrix(grandprix_iri) {
         PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
         PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 
-        SELECT * WHERE {
+        SELECT 
+        ?name
+        ?year
+        ?gp_date
+        ?gp_time
+        ?fp1_date
+        ?fp2_date
+        ?fp3_date
+        ?fp1_time
+        ?fp2_time
+        ?fp3_time
+        ?qualification_date
+        ?qualification_time
+        ?sprint_date
+        ?sprint_time
+        ?circuit_abstract
+        ?circuit_thumbnail
+        ?gp_abstract
+        ?gp_thumbnail
+        ?circuit_name
+        ?circuit_location
+        ?circuit_country
+        ?circuit_lat
+        ?circuit_lng
+
+        WHERE {
             :${grandprix_iri} a dbo:GrandPrix .
             OPTIONAL  {:${grandprix_iri} :name ?name }
             OPTIONAL  {:${grandprix_iri} :year ?year}
@@ -77,18 +102,35 @@ export async function getGrandPrix(grandprix_iri) {
      
             OPTIONAL{
                 SERVICE <http://dbpedia.org/sparql> {
-                  ?wikipedia_circuit_iri  foaf:primaryTopic ?circuit_page_dbo .
-                  OPTIONAL{ ?circuit_page_dbo dbo:abstract ?circuit_abstract. FILTER(LANG(?circuit_abstract) = "fr") }
-                  OPTIONAL{ ?circuit_page_dbo dbo:thumbnail ?circuit_thumbnail. }
-                  ?wikipedia_gp_iri  foaf:primaryTopic ?gp_page_dbo .
-                  OPTIONAL{ ?gp_page_dbo dbo:abstract ?gp_abstract. FILTER(LANG(?gp_abstract) = "fr") }
+                  {
+                    ?circuit_page_dbr foaf:isPrimaryTopicOf ?wikipedia_circuit_iri
+                  }
+                  UNION
+                  { 
+                    ?circuit_page_dbr2 foaf:isPrimaryTopicOf ?wikipedia_circuit_iri ;
+                                      dbo:wikiPageRedirects ?circuit_page_dbr.
+                  }
+                  OPTIONAL{ ?circuit_page_dbr dbo:abstract ?circuit_abstract. FILTER(LANG(?circuit_abstract) = "fr") }
+                  OPTIONAL{ ?circuit_page_dbr dbo:thumbnail ?circuit_thumbnail. }
                 }
-            }
-              
-        }
+              }
+            
+            OPTIONAL{
+                SERVICE <http://dbpedia.org/sparql> {
+                  {
+                    ?gp_page_dbr foaf:isPrimaryTopicOf ?wikipedia_gp_iri
+                  }
+                  UNION
+                  { 
+                    ?gp_page_dbr2 foaf:isPrimaryTopicOf ?wikipedia_gp_iri ;
+                                      dbo:wikiPageRedirects ?gp_page_dbr.
+                  }
+                  OPTIONAL{ ?gp_page_dbr dbo:abstract ?gp_abstract. FILTER(LANG(?gp_abstract) = "fr") }
+                  OPTIONAL{ ?gp_page_dbr dbo:thumbnail ?gp_thumbnail. }
+                }
+              }
+        } ORDER BY DESC(?circuit_abstract) DESC(?circuit_thumbnail) DESC(?gp_abstract) LIMIT 1
     `
-
-    console.log(query)
     return requestSPARQL(query)
 }
 
@@ -176,6 +218,7 @@ export async function getDriver(driver_iri) {
     
     } 
     `
+    console.log(query)
     return requestSPARQL(query)
 }
 
@@ -271,8 +314,46 @@ export async function getNumberOfGPByCircuit() {
 }
 
 
-export async function getConstructor() {
-    return []
+export async function getConstructor(constructor_iri) {
+    const query = `
+    PREFIX : <http://127.0.0.1:3333/>
+    PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+    PREFIX dbo: <http://dbpedia.org/ontology/>
+    SELECT
+        ?name
+        ?nationality
+        ?wikipedia
+        ?abstract 
+        ?thumbnail
+    WHERE {
+        :${constructor_iri} a :Constructor ;
+        :name ?name ;
+        :nationality ?nationality ;
+        :wikipedia ?wikipedia .
+      
+        OPTIONAL {
+            SERVICE <http://dbpedia.org/sparql> {
+      			{
+                    ?page_dbo foaf:isPrimaryTopicOf ?wikipedia
+      			}
+                UNION
+                { 
+                    ?page_dbo_2 foaf:isPrimaryTopicOf ?wikipedia ;
+                                dbo:wikiPageRedirects ?page_dbo.
+                }
+      
+              OPTIONAL{
+                    ?page_dbo dbo:abstract ?abstract.
+                    FILTER(LANG(?abstract) = "fr")
+              }
+              OPTIONAL{ ?page_dbo dbo:thumbnail ?thumbnail. }
+            }
+          }
+    
+    } 
+    `
+    console.log(query)
+    return requestSPARQL(query)
 }
 export async function getConstructorResults() {
     return []
