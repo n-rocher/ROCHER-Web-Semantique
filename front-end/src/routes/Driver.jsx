@@ -86,7 +86,7 @@ const RESULTS_COLUMNS = [
 ]
 
 
-export default function GrandPrix() {
+export default function Driver() {
 
     let [driver, grandPrixResults, pointsData] = useLoaderData()
 

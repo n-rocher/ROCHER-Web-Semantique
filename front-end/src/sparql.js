@@ -352,11 +352,32 @@ export async function getConstructor(constructor_iri) {
     
     } 
     `
-    console.log(query)
     return requestSPARQL(query)
 }
-export async function getConstructorResults() {
-    return []
+export async function getConstructorDrivers() {
+    const query = `
+        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+        PREFIX dbp: <http://dbpedia.org/property/>
+        PREFIX : <http://127.0.0.1:3333/>
+        PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+        PREFIX dbo: <http://dbpedia.org/ontology/>
+        SELECT
+        DISTINCT ?driver_iri ?forename ?surname ?gp_year
+        WHERE {
+        ?_ a :Result ;
+        :constructor :constructor_9 ;
+        :driver ?driver_iri ;
+        :race ?gp_iri . 
+            
+        ?driver_iri a :Driver ;
+        :name [a :DriverName ;:forename ?forename; :surname ?surname ].
+
+        ?gp_iri a dbo:GrandPrix ;
+            :year ?gp_year .
+        
+        } ORDER BY DESC(?gp_year)
+    `
+    return requestSPARQL(query)
 }
 
 /*

@@ -43,7 +43,7 @@ const router = createBrowserRouter([
 		element: <Constructor />,
 		errorElement: <ErrorPage />,
 		loader: async ({ params }) => {
-			return Promise.all([SPARQL.getConstructor(params.constructor_IRI), SPARQL.getConstructorResults(params.constructor_IRI)])
+			return Promise.all([SPARQL.getConstructor(params.constructor_IRI), SPARQL.getConstructorDrivers(params.constructor_IRI)])
 		},
 	}
 ])
