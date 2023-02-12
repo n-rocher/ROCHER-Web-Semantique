@@ -32,8 +32,8 @@ const BADGE_COLORS = ["#FCF7BC", "#FEA27F", "#BADA55", "#FFA500", "#0000FF"]
 const CHART_COLOR = "#FF1801"
 const STATUS_COLOR = {
     "out": "#ff7070",
-    "ok": "#BADA55",
     "lap": "#5757ff",
+    "ok": "#BADA55",
 }
 
 const ARRAY_STATUS_COLOR = Object.values(STATUS_COLOR)
@@ -90,38 +90,48 @@ export default function GrandPrix() {
 
     let [driver, grandPrixResults, pointsData] = useLoaderData()
 
-    // Return le plus long abstract disponible en francais
+    /* Trouver la plus longue description retournée */
     if (driver.length > 1) {
         let abs_length = driver.map(x => x?.abstract?.value?.length || 0)
         driver = driver[abs_length.indexOf(Math.max(...abs_length))]
     } else {
         driver = driver[0]
     }
+    /***************************************************************************/
 
-    const status_list = pointsData.map(x => {
-        return { x: x.gp_year.value, y: parseInt(x.count.value), g: x.status_type.value }
-    }).sort((x, y) => {
-        if (x.g < y.g) {
-            return 1;
-        }
-        if (x.g > y.g) {
-            return -1;
-        }
-        return 0;
+
+    /* Organisation des données pour le graphique "Status de fin de grand prix" */
+    let value_present_for_year = {}
+    pointsData.map(obj => {
+        let x = parseInt(obj.gp_year.value)
+        let y = parseInt(obj.count.value)
+        let g = obj.status_type.value
+        if (!(x in value_present_for_year)) value_present_for_year[x] = { "ok": 0, "lap": 0, "out": 0 }
+        value_present_for_year[x][g] += y
     })
+    const status_list = Object.entries(value_present_for_year).map(([year, values]) => {
+        return Object.entries(values).map(v => {
+            return { x: year, y: v[1], g: v[0] }
+        }).reverse()
+    }).flat()
+    /***************************************************************************/
 
+
+
+    /* Organisation des données pour le graphique "Nombre de point gagné par année" */
     const points_list = Object.entries(pointsData.reduce((pV, x) => {
         if (!(x.gp_year.value in pV)) pV[x.gp_year.value] = 0
         pV[x.gp_year.value] += parseFloat(x.points.value)
         return pV
     }, {}))
+    /********************************************************************************/
 
     return <>
 
         <EuiPanel paddingSize="l" hasBorder>
             <EuiFlexGroup justifyContent="start">
                 {driver?.thumbnail?.value &&
-                    <EuiImage size="m" src={driver.thumbnail.value} />
+                    <EuiImage alt="Photo du pilote" size="m" src={driver.thumbnail.value} />
                 }
                 <div>
                     <EuiTitle size="l">

@@ -257,7 +257,7 @@ export async function getDriverResults(driver_iri) {
         
         FILTER(LANG(?status) = "fr")
         
-        } ORDER BY DESC(?gp_date)
+        } ORDER BY DESC(?gp_date) DESC(?gp_year)
     `
     return requestSPARQL(query)
 }
