@@ -354,28 +354,32 @@ export async function getConstructor(constructor_iri) {
     `
     return requestSPARQL(query)
 }
-export async function getConstructorDrivers() {
+export async function getConstructorDrivers(constructor_iri) {
     const query = `
-        PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
-        PREFIX dbp: <http://dbpedia.org/property/>
         PREFIX : <http://127.0.0.1:3333/>
-        PREFIX foaf: <http://xmlns.com/foaf/0.1/>
         PREFIX dbo: <http://dbpedia.org/ontology/>
         SELECT
-        DISTINCT ?driver_iri ?forename ?surname ?gp_year
+            ?driver_uri
+            (sample(?_driver_forename) AS ?driver_forename)
+            (sample(?_driver_surname) AS ?driver_surname)
+            (sample(?_driver_number) AS ?driver_number)
+            (count(?gp_race) AS ?driver_nbr_gp)
+            ?gp_year
         WHERE {
-        ?_ a :Result ;
-        :constructor :constructor_9 ;
-        :driver ?driver_iri ;
-        :race ?gp_iri . 
+            ?result a :Result;
+                :constructor :${constructor_iri};
+                :driver ?driver_uri ;
+                :driverNumber ?_driver_number ;
+                :race ?gp_race.
             
-        ?driver_iri a :Driver ;
-        :name [a :DriverName ;:forename ?forename; :surname ?surname ].
-
-        ?gp_iri a dbo:GrandPrix ;
-            :year ?gp_year .
-        
-        } ORDER BY DESC(?gp_year)
+            ?gp_race a dbo:GrandPrix ;
+                :year ?gp_year .
+            
+            ?driver_uri a :Driver ;
+                :name [ :forename ?_driver_forename; :surname ?_driver_surname ] .
+        }
+        GROUP BY ?gp_year ?driver_uri
+        ORDER BY DESC(?gp_year)
     `
     return requestSPARQL(query)
 }
