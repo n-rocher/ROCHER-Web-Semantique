@@ -4,9 +4,9 @@ Ontologie sur les Grand Prix de Formule 1 depuis les premiers jusqu'en 2022.
 
 ## Données
 
-Les données utilisées proviennent du jeu de données fournis sur Kaggle : [Formula 1 World Championship](https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020).
+Les données utilisées proviennent du jeu de données fournis sur Kaggle : [Formula 1 World Championship](https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020)
 
-Ces données sont récupérées depuis l'API [Ergast](http://ergast.com/mrd/).
+Ces données sont récupérées depuis l'API [Ergast](http://ergast.com/mrd/)
 
 ## Construit avec
 
