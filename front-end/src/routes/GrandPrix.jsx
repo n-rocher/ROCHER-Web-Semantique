@@ -136,7 +136,7 @@ export default function GrandPrix() {
 					<EuiFlexGroup alignItems="center" style={{ margin: "0px 15px 15px 15px" }}>
 
 						{grandPrix?.circuit_thumbnail?.value &&
-							<EuiImage size="m" src={grandPrix.circuit_thumbnail.value} />
+							<EuiImage size="m" alt="Circuit" src={grandPrix.circuit_thumbnail.value} />
 						}
 
 						<EuiText grow={true} style={{ marginLeft: 15, textAlign: "justify" }}>
