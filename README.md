@@ -44,7 +44,7 @@ Utilisé pour traiter les données :
 - RDF Transform v2.2.0
 ```
 
-### Usage
+## Usage
 
 Étape à suivre pour la mise en place du projet en local :
 
@@ -53,3 +53,8 @@ Utilisé pour traiter les données :
 2. Dans le dossier `front-end`, installer les dépendances via `npx yarn install`.
 3. Toujours dans ce dossier, lancer l'application web en mode développement via `npx yarn start`
 4. Testez sur [http://localhost:3000](http://localhost:3000) !
+
+
+
+## Auteur
+Nathan Rocher
